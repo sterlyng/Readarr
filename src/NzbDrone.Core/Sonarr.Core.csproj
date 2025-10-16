@@ -41,6 +41,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\..\Logo\readarr-simple.svg">
+      <Link>Resources\Logo\readarr-simple.svg</Link>
+    </Content>
+    <Content Include="..\..\Logo\readarr.svg">
+      <Link>Resources\Logo\readarr.svg</Link>
+    </Content>
     <Content Include="Localization\Core\**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

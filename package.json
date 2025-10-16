@@ -12,10 +12,12 @@
     "lint-fix": "yarn lint --fix",
     "stylelint": "stylelint \"frontend/**/*.css\" --config frontend/.stylelintrc"
   },
-  "repository": "https://github.com/Sonarr/Sonarr",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sonarr/Sonarr.git"
+  },
   "author": "Team Sonarr",
   "license": "GPL-3.0",
-  "readmeFilename": "readme.md",
   "main": "index.ts",
   "browserslist": [
     "defaults"
@@ -155,5 +157,10 @@
     "node": "20.11.1",
     "yarn": "1.22.19"
   },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Sonarr/Sonarr/issues"
+  },
+  "homepage": "https://github.com/Sonarr/Sonarr#readme"
 }
