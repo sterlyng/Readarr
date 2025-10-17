@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
-using NzbDrone.Common.EnvironmentInfo;
-using NzbDrone.Core.Datastore;
+using Readarr.Common.EnvironmentInfo;
+using Readarr.Core.Datastore;
 
-namespace Sonarr.Http.Extensions
+namespace Readarr.Http.Extensions
 {
     public static class RequestExtensions
     {
@@ -99,12 +99,12 @@ namespace Sonarr.Http.Extensions
 
         public static string GetSource(this HttpRequest request)
         {
-            if (request.Headers.TryGetValue("X-Sonarr-Client", out var source))
+            if (request.Headers.TryGetValue("X-Readarr-Client", out var source))
             {
                 return source;
             }
 
-            return NzbDrone.Common.Http.UserAgentParser.ParseSource(request.Headers["User-Agent"]);
+            return Readarr.Common.Http.UserAgentParser.ParseSource(request.Headers["User-Agent"]);
         }
 
         public static void DisableCache(this IHeaderDictionary headers)

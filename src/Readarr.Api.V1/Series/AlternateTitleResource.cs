@@ -1,7 +1,7 @@
-using NzbDrone.Common.Extensions;
-using NzbDrone.Core.DataAugmentation.Scene;
+using Readarr.Common.Extensions;
+using Readarr.Core.DataAugmentation.Scene;
 
-namespace Sonarr.Api.V5.Series;
+namespace Readarr.Api.V5.Series;
 
 public class AlternateTitleResource
 {

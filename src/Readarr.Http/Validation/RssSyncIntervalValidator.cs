@@ -1,6 +1,6 @@
 ﻿using FluentValidation.Validators;
 
-namespace Sonarr.Http.Validation
+namespace Readarr.Http.Validation
 {
     public class RssSyncIntervalValidator : PropertyValidator
     {

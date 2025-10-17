@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
-using NzbDrone.Core.Indexers;
-using NzbDrone.Core.Profiles.Delay;
-using Sonarr.Http.REST;
+using Readarr.Core.Indexers;
+using Readarr.Core.Profiles.Delay;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V3.Profiles.Delay
+namespace Readarr.Api.V3.Profiles.Delay
 {
     public class DelayProfileResource : RestResource
     {

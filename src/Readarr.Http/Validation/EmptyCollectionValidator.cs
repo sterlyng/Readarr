@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using FluentValidation.Validators;
-using NzbDrone.Common.Extensions;
+using Readarr.Common.Extensions;
 
-namespace Sonarr.Http.Validation
+namespace Readarr.Http.Validation
 {
     public class EmptyCollectionValidator<T> : PropertyValidator
     {

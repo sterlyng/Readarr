@@ -106,7 +106,7 @@ _TeamCity*
 
 # Readarr
 config.xml
-nzbdrone.log*txt
+Readarr.log*txt
 UpdateLogs/
 *workspace.xml
 *.test-cache
@@ -141,9 +141,9 @@ artifacts/
 **/Properties/launchSettings.json
 
 # Packages
-Sonarr_*/
-Sonarr_*.zip
-Sonarr_*.gz
+Readarr_*/
+Readarr_*.zip
+Readarr_*.gz
 gecko.zip
 geckodriver.exe
 

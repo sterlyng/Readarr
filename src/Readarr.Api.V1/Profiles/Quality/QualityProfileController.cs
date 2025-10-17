@@ -2,14 +2,14 @@ using System.Collections.Generic;
 using System.Linq;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Common.Extensions;
-using NzbDrone.Core.CustomFormats;
-using NzbDrone.Core.Profiles.Qualities;
-using Sonarr.Http;
-using Sonarr.Http.REST;
-using Sonarr.Http.REST.Attributes;
+using Readarr.Common.Extensions;
+using Readarr.Core.CustomFormats;
+using Readarr.Core.Profiles.Qualities;
+using Readarr.Http;
+using Readarr.Http.REST;
+using Readarr.Http.REST.Attributes;
 
-namespace Sonarr.Api.V3.Profiles.Quality
+namespace Readarr.Api.V3.Profiles.Quality
 {
     [V3ApiController]
     public class QualityProfileController : RestController<QualityProfileResource>

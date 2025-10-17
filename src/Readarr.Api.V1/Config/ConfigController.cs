@@ -1,11 +1,11 @@
 using System.Linq;
 using System.Reflection;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Core.Configuration;
-using Sonarr.Http.REST;
-using Sonarr.Http.REST.Attributes;
+using Readarr.Core.Configuration;
+using Readarr.Http.REST;
+using Readarr.Http.REST.Attributes;
 
-namespace Sonarr.Api.V3.Config
+namespace Readarr.Api.V3.Config
 {
     public abstract class ConfigController<TResource> : RestController<TResource>
         where TResource : RestResource, new()

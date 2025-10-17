@@ -1,16 +1,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Common.Extensions;
-using NzbDrone.Core.Languages;
-using NzbDrone.Core.MediaFiles.EpisodeImport.Manual;
-using NzbDrone.Core.Qualities;
-using Sonarr.Api.V3.CustomFormats;
-using Sonarr.Api.V3.Episodes;
-using Sonarr.Http;
-using Sonarr.Http.REST;
+using Readarr.Common.Extensions;
+using Readarr.Core.Languages;
+using Readarr.Core.MediaFiles.EpisodeImport.Manual;
+using Readarr.Core.Qualities;
+using Readarr.Api.V3.CustomFormats;
+using Readarr.Api.V3.Episodes;
+using Readarr.Http;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V3.ManualImport
+namespace Readarr.Api.V3.ManualImport
 {
     [V3ApiController]
     public class ManualImportController : Controller

@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Core.Tags;
-using Sonarr.Http;
-using Sonarr.Http.REST;
+using Readarr.Core.Tags;
+using Readarr.Http;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V3.Tags
+namespace Readarr.Api.V3.Tags
 {
     [V3ApiController("tag/detail")]
     public class TagDetailsController : RestController<TagDetailsResource>

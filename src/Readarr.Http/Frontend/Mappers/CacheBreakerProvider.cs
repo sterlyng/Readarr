@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using NzbDrone.Common.Crypto;
-using NzbDrone.Common.EnvironmentInfo;
-using NzbDrone.Common.Extensions;
+using Readarr.Common.Crypto;
+using Readarr.Common.EnvironmentInfo;
+using Readarr.Common.Extensions;
 
-namespace Sonarr.Http.Frontend.Mappers
+namespace Readarr.Http.Frontend.Mappers
 {
     public interface ICacheBreakerProvider
     {

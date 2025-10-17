@@ -1,7 +1,7 @@
 declare module '*.module.css';
 
 interface Window {
-  Sonarr: {
+  Readarr: {
     apiKey: string;
     apiRoot: string;
     instanceName: string;

@@ -5,18 +5,18 @@ using FluentValidation;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using NLog;
-using NzbDrone.Common.Serializer;
-using NzbDrone.Core.Datastore;
-using NzbDrone.Core.Exceptions;
-using Sonarr.Http.Exceptions;
+using Readarr.Common.Serializer;
+using Readarr.Core.Datastore;
+using Readarr.Core.Exceptions;
+using Readarr.Http.Exceptions;
 
-namespace Sonarr.Http.ErrorManagement
+namespace Readarr.Http.ErrorManagement
 {
-    public class SonarrErrorPipeline
+    public class ReadarrErrorPipeline
     {
         private readonly Logger _logger;
 
-        public SonarrErrorPipeline(Logger logger)
+        public ReadarrErrorPipeline(Logger logger)
         {
             _logger = logger;
         }
@@ -52,7 +52,7 @@ namespace Sonarr.Http.ErrorManagement
                 await response.WriteAsync(STJson.ToJson(validationException.Errors));
                 return;
             }
-            else if (exception is NzbDroneClientException clientException)
+            else if (exception is ReadarrClientException clientException)
             {
                 statusCode = clientException.StatusCode;
             }

@@ -1,4 +1,4 @@
-if (window.Sonarr.analytics) {
+if (window.Readarr.analytics) {
   const d = document;
   const g = d.createElement('script');
   const s = d.getElementsByTagName('script')[0];
@@ -6,6 +6,6 @@ if (window.Sonarr.analytics) {
   g.type = 'text/javascript';
   g.async = true;
   g.defer = true;
-  g.src = '//piwik.sonarr.tv/piwik.js';
+  g.src = '//piwik.Readarr.tv/piwik.js';
   s.parentNode.insertBefore(g, s);
 }

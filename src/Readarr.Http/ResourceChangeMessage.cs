@@ -1,8 +1,8 @@
 using System;
-using NzbDrone.Core.Datastore.Events;
-using Sonarr.Http.REST;
+using Readarr.Core.Datastore.Events;
+using Readarr.Http.REST;
 
-namespace Sonarr.Http
+namespace Readarr.Http
 {
     public class ResourceChangeMessage<TResource>
         where TResource : RestResource

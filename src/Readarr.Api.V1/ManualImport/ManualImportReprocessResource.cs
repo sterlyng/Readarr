@@ -1,12 +1,12 @@
 using System.Collections.Generic;
-using NzbDrone.Core.Languages;
-using NzbDrone.Core.Parser.Model;
-using NzbDrone.Core.Qualities;
-using Sonarr.Api.V3.CustomFormats;
-using Sonarr.Api.V3.Episodes;
-using Sonarr.Http.REST;
+using Readarr.Core.Languages;
+using Readarr.Core.Parser.Model;
+using Readarr.Core.Qualities;
+using Readarr.Api.V3.CustomFormats;
+using Readarr.Api.V3.Episodes;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V3.ManualImport
+namespace Readarr.Api.V3.ManualImport
 {
     public class ManualImportReprocessResource : RestResource
     {

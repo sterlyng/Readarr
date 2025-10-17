@@ -1,8 +1,8 @@
 using System;
-using NzbDrone.Core.ImportLists;
-using NzbDrone.Core.Tv;
+using Readarr.Core.ImportLists;
+using Readarr.Core.Tv;
 
-namespace Sonarr.Api.V3.ImportLists
+namespace Readarr.Api.V3.ImportLists
 {
     public class ImportListResource : ProviderResource<ImportListResource>
     {

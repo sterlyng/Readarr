@@ -48,7 +48,7 @@ function RemotePathMappings() {
           <InlineMarkdown
             data={translate('RemotePathMappingsInfo', {
               wikiLink:
-                'https://wiki.servarr.com/sonarr/settings#remote-path-mappings',
+                'https://wiki.servarr.com/Readarr/settings#remote-path-mappings',
             })}
           />
         </Alert>

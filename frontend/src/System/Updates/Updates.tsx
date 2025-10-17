@@ -270,8 +270,8 @@ function Updates() {
               <div>
                 <InlineMarkdown
                   data={translate('InstallMajorVersionUpdateMessageLink', {
-                    domain: 'sonarr.tv',
-                    url: 'https://sonarr.tv/#downloads',
+                    domain: 'Readarr.tv',
+                    url: 'https://Readarr.tv/#downloads',
                   })}
                 />
               </div>

@@ -1,12 +1,12 @@
 using System.Collections.Generic;
-using NzbDrone.Core.Languages;
-using NzbDrone.Core.Parser.Model;
-using Sonarr.Api.V3.CustomFormats;
-using Sonarr.Api.V3.Episodes;
-using Sonarr.Api.V3.Series;
-using Sonarr.Http.REST;
+using Readarr.Core.Languages;
+using Readarr.Core.Parser.Model;
+using Readarr.Api.V3.CustomFormats;
+using Readarr.Api.V3.Episodes;
+using Readarr.Api.V3.Series;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V3.Parse
+namespace Readarr.Api.V3.Parse
 {
     public class ParseResource : RestResource
     {

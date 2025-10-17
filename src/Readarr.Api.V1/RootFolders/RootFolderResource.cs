@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using NzbDrone.Common.Extensions;
-using NzbDrone.Core.RootFolders;
-using Sonarr.Http.REST;
+using Readarr.Common.Extensions;
+using Readarr.Core.RootFolders;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V3.RootFolders
+namespace Readarr.Api.V3.RootFolders
 {
     public class RootFolderResource : RestResource
     {

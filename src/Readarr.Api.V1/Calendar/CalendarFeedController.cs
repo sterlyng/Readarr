@@ -6,12 +6,12 @@ using Ical.Net.CalendarComponents;
 using Ical.Net.DataTypes;
 using Ical.Net.Serialization;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Common.Extensions;
-using NzbDrone.Core.Tags;
-using NzbDrone.Core.Tv;
-using Sonarr.Http;
+using Readarr.Common.Extensions;
+using Readarr.Core.Tags;
+using Readarr.Core.Tv;
+using Readarr.Http;
 
-namespace Sonarr.Api.V3.Calendar
+namespace Readarr.Api.V3.Calendar
 {
     [V3FeedController("calendar")]
     public class CalendarFeedController : Controller
@@ -27,7 +27,7 @@ namespace Sonarr.Api.V3.Calendar
             _tagService = tagService;
         }
 
-        [HttpGet("Sonarr.ics")]
+        [HttpGet("Readarr.ics")]
         public IActionResult GetCalendarFeed(int pastDays = 7, int futureDays = 28, string tags = "", bool unmonitored = false, bool premieresOnly = false, bool asAllDay = false)
         {
             var start = DateTime.Today.AddDays(-pastDays);
@@ -43,10 +43,10 @@ namespace Sonarr.Api.V3.Calendar
             var allSeries = _seriesService.GetAllSeries();
             var calendar = new Ical.Net.Calendar
             {
-                ProductId = "-//sonarr.tv//Sonarr//EN"
+                ProductId = "-//Readarr.tv//Readarr//EN"
             };
 
-            var calendarName = "Sonarr TV Schedule";
+            var calendarName = "Readarr TV Schedule";
             calendar.AddProperty(new CalendarProperty("NAME", calendarName));
             calendar.AddProperty(new CalendarProperty("X-WR-CALNAME", calendarName));
 
@@ -70,7 +70,7 @@ namespace Sonarr.Api.V3.Calendar
                 }
 
                 var occurrence = calendar.Create<CalendarEvent>();
-                occurrence.Uid = "NzbDrone_episode_" + episode.Id;
+                occurrence.Uid = "Readarr_episode_" + episode.Id;
                 occurrence.Status = episode.HasFile ? EventStatus.Confirmed : EventStatus.Tentative;
                 occurrence.Description = episode.Overview;
                 occurrence.Categories = new List<string>() { series.Network };

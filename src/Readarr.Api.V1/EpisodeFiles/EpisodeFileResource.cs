@@ -1,13 +1,13 @@
-using NzbDrone.Core.CustomFormats;
-using NzbDrone.Core.DecisionEngine.Specifications;
-using NzbDrone.Core.Languages;
-using NzbDrone.Core.MediaFiles;
-using NzbDrone.Core.Parser.Model;
-using NzbDrone.Core.Qualities;
-using Sonarr.Api.V5.CustomFormats;
-using Sonarr.Http.REST;
+using Readarr.Core.CustomFormats;
+using Readarr.Core.DecisionEngine.Specifications;
+using Readarr.Core.Languages;
+using Readarr.Core.MediaFiles;
+using Readarr.Core.Parser.Model;
+using Readarr.Core.Qualities;
+using Readarr.Api.V5.CustomFormats;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V5.EpisodeFiles
+namespace Readarr.Api.V5.EpisodeFiles
 {
     public class EpisodeFileResource : RestResource
     {
@@ -32,7 +32,7 @@ namespace Sonarr.Api.V5.EpisodeFiles
 
     public static class EpisodeFileResourceMapper
     {
-        public static EpisodeFileResource ToResource(this EpisodeFile model, NzbDrone.Core.Tv.Series series, IUpgradableSpecification upgradableSpecification, ICustomFormatCalculationService formatCalculationService)
+        public static EpisodeFileResource ToResource(this EpisodeFile model, Readarr.Core.Tv.Series series, IUpgradableSpecification upgradableSpecification, ICustomFormatCalculationService formatCalculationService)
         {
             model.Series = series;
             var customFormats = formatCalculationService?.ParseCustomFormat(model, model.Series) ?? [];

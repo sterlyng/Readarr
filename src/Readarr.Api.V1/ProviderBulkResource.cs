@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using NzbDrone.Core.ThingiProvider;
+using Readarr.Core.ThingiProvider;
 
-namespace Sonarr.Api.V3
+namespace Readarr.Api.V3
 {
     public class ProviderBulkResource<T>
     {

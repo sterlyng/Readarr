@@ -1,12 +1,12 @@
-using NzbDrone.Core.CustomFormats;
-using NzbDrone.Core.Indexers;
-using NzbDrone.Core.Languages;
-using NzbDrone.Core.Qualities;
-using Sonarr.Api.V5.CustomFormats;
-using Sonarr.Api.V5.Series;
-using Sonarr.Http.REST;
+using Readarr.Core.CustomFormats;
+using Readarr.Core.Indexers;
+using Readarr.Core.Languages;
+using Readarr.Core.Qualities;
+using Readarr.Api.V5.CustomFormats;
+using Readarr.Api.V5.Series;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V5.Blocklist;
+namespace Readarr.Api.V5.Blocklist;
 
 public class BlocklistResource : RestResource
 {
@@ -27,7 +27,7 @@ public class BlocklistResource : RestResource
 
 public static class BlocklistResourceMapper
 {
-    public static BlocklistResource MapToResource(this NzbDrone.Core.Blocklisting.Blocklist model, ICustomFormatCalculationService formatCalculator)
+    public static BlocklistResource MapToResource(this Readarr.Core.Blocklisting.Blocklist model, ICustomFormatCalculationService formatCalculator)
     {
         return new BlocklistResource
         {

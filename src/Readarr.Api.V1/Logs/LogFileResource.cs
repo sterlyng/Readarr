@@ -1,7 +1,7 @@
 ﻿using System;
-using Sonarr.Http.REST;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V3.Logs
+namespace Readarr.Api.V3.Logs
 {
     public class LogFileResource : RestResource
     {

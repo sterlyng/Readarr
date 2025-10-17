@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using NzbDrone.Core.Configuration;
+using Readarr.Core.Configuration;
 
-namespace Sonarr.Http.Authentication
+namespace Readarr.Http.Authentication
 {
     public class ApiKeyAuthenticationOptions : AuthenticationSchemeOptions
     {

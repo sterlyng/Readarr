@@ -1,6 +1,6 @@
-using Sonarr.Http.REST;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V5.Queue
+namespace Readarr.Api.V5.Queue
 {
     public class QueueStatusResource : RestResource
     {

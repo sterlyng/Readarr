@@ -1,6 +1,6 @@
-using NzbDrone.Core.Indexers;
+using Readarr.Core.Indexers;
 
-namespace Sonarr.Api.V3.Indexers
+namespace Readarr.Api.V3.Indexers
 {
     public class IndexerResource : ProviderResource<IndexerResource>
     {

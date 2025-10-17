@@ -1,6 +1,6 @@
-using NzbDrone.Core.Extras.Metadata;
+using Readarr.Core.Extras.Metadata;
 
-namespace Sonarr.Api.V3.Metadata
+namespace Readarr.Api.V3.Metadata
 {
     public class MetadataResource : ProviderResource<MetadataResource>
     {

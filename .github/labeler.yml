@@ -1,22 +1,22 @@
 'connection':
   - changed-files:
-    - any-glob-to-any-file: src/NzbDrone.Core/Notifications/**/*
+    - any-glob-to-any-file: src/Readarr.Core/Notifications/**/*
 
 'db-migration':
   - changed-files:
-    - any-glob-to-any-file: src/NzbDrone.Core/Datastore/Migration/*
+    - any-glob-to-any-file: src/Readarr.Core/Datastore/Migration/*
 
 'download-client':
   - changed-files:
-    - any-glob-to-any-file: src/NzbDrone.Core/Download/Clients/**/*
+    - any-glob-to-any-file: src/Readarr.Core/Download/Clients/**/*
 
 'indexer':
   - changed-files:
-    - any-glob-to-any-file: src/NzbDrone.Core/Indexers/**/*
+    - any-glob-to-any-file: src/Readarr.Core/Indexers/**/*
 
 'parsing':
   - changed-files:
-    - any-glob-to-any-file: src/NzbDrone.Core/Parser/**/*
+    - any-glob-to-any-file: src/Readarr.Core/Parser/**/*
 
 'ui-only':
   - changed-files:

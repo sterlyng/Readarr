@@ -1,4 +1,4 @@
-namespace Sonarr.Api.V3
+namespace Readarr.Api.V3
 {
     public enum ApplyTags
     {

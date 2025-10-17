@@ -2,12 +2,12 @@ using System;
 using System.IO;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Common.Disk;
-using NzbDrone.Common.Extensions;
-using NzbDrone.Core.MediaFiles;
-using Sonarr.Http;
+using Readarr.Common.Disk;
+using Readarr.Common.Extensions;
+using Readarr.Core.MediaFiles;
+using Readarr.Http;
 
-namespace Sonarr.Api.V3.FileSystem
+namespace Readarr.Api.V3.FileSystem
 {
     [V3ApiController]
     public class FileSystemController : Controller

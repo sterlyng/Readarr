@@ -1,0 +1,14 @@
+﻿using FluentMigrator;
+using Readarr.Core.Datastore.Migration.Framework;
+
+namespace Readarr.Core.Datastore.Migration
+{
+    [Migration(92)]
+    public class add_unverifiedscenenumbering : ReadarrMigrationBase
+    {
+        protected override void MainDbUpgrade()
+        {
+            Alter.Table("Episodes").AddColumn("UnverifiedSceneNumbering").AsBoolean().WithDefaultValue(false);
+        }
+    }
+}

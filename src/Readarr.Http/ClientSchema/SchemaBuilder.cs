@@ -4,14 +4,14 @@ using System.Linq;
 using System.Reflection;
 using System.Text.Json;
 using DryIoc;
-using NzbDrone.Common.EnsureThat;
-using NzbDrone.Common.Extensions;
-using NzbDrone.Common.Reflection;
-using NzbDrone.Common.Serializer;
-using NzbDrone.Core.Annotations;
-using NzbDrone.Core.Localization;
+using Readarr.Common.EnsureThat;
+using Readarr.Common.Extensions;
+using Readarr.Common.Reflection;
+using Readarr.Common.Serializer;
+using Readarr.Core.Annotations;
+using Readarr.Core.Localization;
 
-namespace Sonarr.Http.ClientSchema
+namespace Readarr.Http.ClientSchema
 {
     public static class SchemaBuilder
     {

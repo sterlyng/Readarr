@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Sonarr.Api.V3.Episodes
+namespace Readarr.Api.V3.Episodes
 {
     public class EpisodesMonitoredResource
     {

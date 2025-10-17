@@ -2,9 +2,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.StaticFiles;
-using Sonarr.Http.Extensions;
+using Readarr.Http.Extensions;
 
-namespace Sonarr.Http.Middleware
+namespace Readarr.Http.Middleware
 {
     public class IfModifiedMiddleware
     {

@@ -90,7 +90,7 @@ const useAppPage = () => {
   const { hasError, errors } = useSelector(createErrorsSelector());
 
   const isLocalStorageSupported = useMemo(() => {
-    const key = 'sonarrTest';
+    const key = 'ReadarrTest';
 
     try {
       localStorage.setItem(key, key);

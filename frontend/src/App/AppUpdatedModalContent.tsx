@@ -74,7 +74,7 @@ function AppUpdatedModalContent(props: AppUpdatedModalContentProps) {
   const update = mergeUpdates(data, version, prevVersion);
 
   const handleSeeChangesPress = useCallback(() => {
-    window.location.href = `${window.Sonarr.urlBase}/system/updates`;
+    window.location.href = `${window.Readarr.urlBase}/system/updates`;
   }, []);
 
   useEffect(() => {

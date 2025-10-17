@@ -1,7 +1,7 @@
 {
-  "name": "sonarr",
+  "name": "Readarr",
   "version": "4.0.0",
-  "description": "Sonarr is a PVR for Usenet and BitTorrent users",
+  "description": "Readarr is a PVR for Usenet and BitTorrent users",
   "scripts": {
     "build": "webpack --config ./frontend/build/webpack.config.js",
     "prebuild": "yarn clean",
@@ -14,9 +14,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sonarr/Sonarr.git"
+    "url": "git+https://github.com/Readarr/Readarr.git"
   },
-  "author": "Team Sonarr",
+  "author": "Team Readarr",
   "license": "GPL-3.0",
   "main": "index.ts",
   "browserslist": [
@@ -160,7 +160,7 @@
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/Sonarr/Sonarr/issues"
+    "url": "https://github.com/Readarr/Readarr/issues"
   },
-  "homepage": "https://github.com/Sonarr/Sonarr#readme"
+  "homepage": "https://github.com/Readarr/Readarr#readme"
 }

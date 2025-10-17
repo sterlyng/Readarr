@@ -1,10 +1,10 @@
 using FluentValidation;
-using NzbDrone.Core.Configuration;
-using NzbDrone.Core.ImportLists;
-using NzbDrone.Core.Validation;
-using Sonarr.Http;
+using Readarr.Core.Configuration;
+using Readarr.Core.ImportLists;
+using Readarr.Core.Validation;
+using Readarr.Http;
 
-namespace Sonarr.Api.V3.Config
+namespace Readarr.Api.V3.Config
 {
     [V3ApiController("config/importlist")]
 

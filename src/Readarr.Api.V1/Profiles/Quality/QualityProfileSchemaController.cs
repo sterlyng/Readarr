@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Core.Profiles.Qualities;
-using Sonarr.Http;
+using Readarr.Core.Profiles.Qualities;
+using Readarr.Http;
 
-namespace Sonarr.Api.V3.Profiles.Quality
+namespace Readarr.Api.V3.Profiles.Quality
 {
     [V3ApiController("qualityprofile/schema")]
     public class QualityProfileSchemaController : Controller

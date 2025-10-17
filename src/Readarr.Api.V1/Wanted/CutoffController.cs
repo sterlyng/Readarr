@@ -1,16 +1,16 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Core.CustomFormats;
-using NzbDrone.Core.Datastore;
-using NzbDrone.Core.DecisionEngine.Specifications;
-using NzbDrone.Core.Tv;
-using NzbDrone.SignalR;
-using Sonarr.Api.V3.Episodes;
-using Sonarr.Http;
-using Sonarr.Http.Extensions;
+using Readarr.Core.CustomFormats;
+using Readarr.Core.Datastore;
+using Readarr.Core.DecisionEngine.Specifications;
+using Readarr.Core.Tv;
+using Readarr.SignalR;
+using Readarr.Api.V3.Episodes;
+using Readarr.Http;
+using Readarr.Http.Extensions;
 
-namespace Sonarr.Api.V3.Wanted
+namespace Readarr.Api.V3.Wanted
 {
     [V3ApiController("wanted/cutoff")]
     public class CutoffController : EpisodeControllerWithSignalR

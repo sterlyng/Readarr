@@ -1,16 +1,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Core.Datastore.Events;
-using NzbDrone.Core.Messaging.Events;
-using NzbDrone.Core.Profiles.Qualities;
-using NzbDrone.Core.Qualities;
-using NzbDrone.SignalR;
-using Sonarr.Http;
-using Sonarr.Http.REST;
-using Sonarr.Http.REST.Attributes;
+using Readarr.Core.Datastore.Events;
+using Readarr.Core.Messaging.Events;
+using Readarr.Core.Profiles.Qualities;
+using Readarr.Core.Qualities;
+using Readarr.SignalR;
+using Readarr.Http;
+using Readarr.Http.REST;
+using Readarr.Http.REST.Attributes;
 
-namespace Sonarr.Api.V3.Qualities
+namespace Readarr.Api.V3.Qualities
 {
     [V3ApiController]
     public class QualityDefinitionController :

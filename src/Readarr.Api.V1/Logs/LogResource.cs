@@ -1,7 +1,7 @@
-using NzbDrone.Core.Instrumentation;
-using Sonarr.Http.REST;
+using Readarr.Core.Instrumentation;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V5.Logs
+namespace Readarr.Api.V5.Logs
 {
     public class LogResource : RestResource
     {

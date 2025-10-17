@@ -1,11 +1,11 @@
-using NzbDrone.Common.Http.Proxy;
-using NzbDrone.Core.Authentication;
-using NzbDrone.Core.Configuration;
-using NzbDrone.Core.Security;
-using NzbDrone.Core.Update;
-using Sonarr.Http.REST;
+using Readarr.Common.Http.Proxy;
+using Readarr.Core.Authentication;
+using Readarr.Core.Configuration;
+using Readarr.Core.Security;
+using Readarr.Core.Update;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V3.Config
+namespace Readarr.Api.V3.Config
 {
     public class HostConfigResource : RestResource
     {

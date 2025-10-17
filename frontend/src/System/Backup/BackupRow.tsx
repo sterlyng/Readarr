@@ -79,7 +79,7 @@ function BackupRow({ id, type, name, path, size, time }: BackupRowProps) {
       </TableRowCell>
 
       <TableRowCell>
-        <Link to={`${window.Sonarr.urlBase}${path}`} noRouter={true}>
+        <Link to={`${window.Readarr.urlBase}${path}`} noRouter={true}>
           {name}
         </Link>
       </TableRowCell>

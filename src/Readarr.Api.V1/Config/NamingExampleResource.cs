@@ -1,6 +1,6 @@
-using NzbDrone.Core.Organizer;
+using Readarr.Core.Organizer;
 
-namespace Sonarr.Api.V3.Config
+namespace Readarr.Api.V3.Config
 {
     public class NamingExampleResource
     {

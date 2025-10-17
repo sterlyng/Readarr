@@ -7,7 +7,7 @@ export const createPersist = <T>(
   options: Omit<PersistOptions<T>, 'name' | 'storage'> = {}
 ) => {
   const instanceName =
-    window.Sonarr.instanceName.toLowerCase().replace(/ /g, '_') ?? 'sonarr';
+    window.Readarr.instanceName.toLowerCase().replace(/ /g, '_') ?? 'Readarr';
 
   const finalName = `${instanceName}_${name}`;
 

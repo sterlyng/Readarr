@@ -3,7 +3,7 @@ using System.Linq;
 using System.Reflection;
 using HarmonyLib;
 
-namespace NzbDrone.RuntimePatches
+namespace Readarr.RuntimePatches
 {
     public static class RuntimePatcher
     {
@@ -52,7 +52,7 @@ namespace NzbDrone.RuntimePatches
 
             if (patches.Any())
             {
-                var harmony = new Harmony("tv.sonarr");
+                var harmony = new Harmony("tv.Readarr");
 
                 foreach (var patch in patches)
                 {

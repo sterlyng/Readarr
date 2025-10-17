@@ -1,13 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Core.Blocklisting;
-using NzbDrone.Core.CustomFormats;
-using NzbDrone.Core.Datastore;
-using NzbDrone.Core.Indexers;
-using Sonarr.Http;
-using Sonarr.Http.Extensions;
-using Sonarr.Http.REST.Attributes;
+using Readarr.Core.Blocklisting;
+using Readarr.Core.CustomFormats;
+using Readarr.Core.Datastore;
+using Readarr.Core.Indexers;
+using Readarr.Http;
+using Readarr.Http.Extensions;
+using Readarr.Http.REST.Attributes;
 
-namespace Sonarr.Api.V5.Blocklist;
+namespace Readarr.Api.V5.Blocklist;
 
 [V5ApiController]
 public class BlocklistController : Controller
@@ -27,7 +27,7 @@ public class BlocklistController : Controller
     public PagingResource<BlocklistResource> GetBlocklist([FromQuery] PagingRequestResource paging, [FromQuery] int[]? seriesIds = null, [FromQuery] DownloadProtocol[]? protocols = null)
     {
         var pagingResource = new PagingResource<BlocklistResource>(paging);
-        var pagingSpec = pagingResource.MapToPagingSpec<BlocklistResource, NzbDrone.Core.Blocklisting.Blocklist>(
+        var pagingSpec = pagingResource.MapToPagingSpec<BlocklistResource, Readarr.Core.Blocklisting.Blocklist>(
             new HashSet<string>(StringComparer.OrdinalIgnoreCase)
             {
                 "date",

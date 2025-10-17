@@ -3,17 +3,17 @@ using System.Linq;
 using System.Reflection;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Common.Extensions;
-using NzbDrone.Core.Authentication;
-using NzbDrone.Core.Configuration;
-using NzbDrone.Core.Update;
-using NzbDrone.Core.Validation;
-using NzbDrone.Core.Validation.Paths;
-using Sonarr.Http;
-using Sonarr.Http.REST;
-using Sonarr.Http.REST.Attributes;
+using Readarr.Common.Extensions;
+using Readarr.Core.Authentication;
+using Readarr.Core.Configuration;
+using Readarr.Core.Update;
+using Readarr.Core.Validation;
+using Readarr.Core.Validation.Paths;
+using Readarr.Http;
+using Readarr.Http.REST;
+using Readarr.Http.REST.Attributes;
 
-namespace Sonarr.Api.V3.Config
+namespace Readarr.Api.V3.Config
 {
     [V3ApiController("config/host")]
     public class HostConfigController : RestController<HostConfigResource>
@@ -38,7 +38,7 @@ namespace Sonarr.Api.V3.Config
             SharedValidator.RuleFor(c => c.Port).ValidPort();
 
             SharedValidator.RuleFor(c => c.UrlBase).ValidUrlBase();
-            SharedValidator.RuleFor(c => c.InstanceName).StartsOrEndsWithSonarr();
+            SharedValidator.RuleFor(c => c.InstanceName).StartsOrEndsWithReadarr();
 
             SharedValidator.RuleFor(c => c.Username).NotEmpty().When(c => c.AuthenticationMethod == AuthenticationType.Forms);
             SharedValidator.RuleFor(c => c.Password).NotEmpty().When(c => c.AuthenticationMethod == AuthenticationType.Forms);

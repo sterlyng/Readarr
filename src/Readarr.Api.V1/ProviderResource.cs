@@ -1,10 +1,10 @@
 using System.Collections.Generic;
-using NzbDrone.Common.Reflection;
-using NzbDrone.Core.ThingiProvider;
-using Sonarr.Http.ClientSchema;
-using Sonarr.Http.REST;
+using Readarr.Common.Reflection;
+using Readarr.Core.ThingiProvider;
+using Readarr.Http.ClientSchema;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V3
+namespace Readarr.Api.V3
 {
     public class ProviderResource<T> : RestResource
     {
@@ -38,7 +38,7 @@ namespace Sonarr.Api.V3
                 Tags = definition.Tags,
                 Fields = SchemaBuilder.ToSchema(definition.Settings),
 
-                InfoLink = $"https://wiki.servarr.com/sonarr/supported#{definition.Implementation.ToLower()}"
+                InfoLink = $"https://wiki.servarr.com/Readarr/supported#{definition.Implementation.ToLower()}"
             };
         }
 

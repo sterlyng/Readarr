@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 using FluentValidation;
 using FluentValidation.Validators;
 
-namespace Sonarr.Http.Validation
+namespace Readarr.Http.Validation
 {
     public static class RuleBuilderExtensions
     {

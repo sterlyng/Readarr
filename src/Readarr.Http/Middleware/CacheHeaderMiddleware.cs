@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using Sonarr.Http.Extensions;
+using Readarr.Http.Extensions;
 
-namespace Sonarr.Http.Middleware
+namespace Readarr.Http.Middleware
 {
     public class CacheHeaderMiddleware
     {

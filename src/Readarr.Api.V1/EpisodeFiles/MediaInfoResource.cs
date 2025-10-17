@@ -1,8 +1,8 @@
-using NzbDrone.Common.Extensions;
-using NzbDrone.Core.MediaFiles.MediaInfo;
-using Sonarr.Http.REST;
+using Readarr.Common.Extensions;
+using Readarr.Core.MediaFiles.MediaInfo;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V5.EpisodeFiles
+namespace Readarr.Api.V5.EpisodeFiles
 {
     public class MediaInfoResource : RestResource
     {

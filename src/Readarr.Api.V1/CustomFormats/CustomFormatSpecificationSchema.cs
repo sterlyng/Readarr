@@ -1,8 +1,8 @@
-using NzbDrone.Core.CustomFormats;
-using Sonarr.Http.ClientSchema;
-using Sonarr.Http.REST;
+using Readarr.Core.CustomFormats;
+using Readarr.Http.ClientSchema;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V5.CustomFormats
+namespace Readarr.Api.V5.CustomFormats
 {
     public class CustomFormatSpecificationSchema : RestResource
     {

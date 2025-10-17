@@ -8,12 +8,12 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NLog;
-using NzbDrone.Common.EnvironmentInfo;
-using NzbDrone.Common.Extensions;
-using NzbDrone.Core.Authentication;
-using NzbDrone.Core.Configuration;
+using Readarr.Common.EnvironmentInfo;
+using Readarr.Common.Extensions;
+using Readarr.Core.Authentication;
+using Readarr.Core.Configuration;
 
-namespace Sonarr.Http.Authentication
+namespace Readarr.Http.Authentication
 {
     [AllowAnonymous]
     [ApiController]
@@ -62,7 +62,7 @@ namespace Sonarr.Http.Authentication
             {
                 if (e.InnerException is XmlException)
                 {
-                    _logger.Error(e, "Failed to authenticate user due to corrupt XML. Please remove all XML files from {0} and restart Sonarr", Path.Combine(_appFolderInfo.AppDataFolder, "asp"));
+                    _logger.Error(e, "Failed to authenticate user due to corrupt XML. Please remove all XML files from {0} and restart Readarr", Path.Combine(_appFolderInfo.AppDataFolder, "asp"));
                 }
                 else
                 {

@@ -1,6 +1,6 @@
-using NzbDrone.Core.SeriesStats;
+using Readarr.Core.SeriesStats;
 
-namespace Sonarr.Api.V5.Series;
+namespace Readarr.Api.V5.Series;
 
 public class SeasonStatisticsResource
 {

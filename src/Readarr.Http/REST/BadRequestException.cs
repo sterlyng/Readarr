@@ -1,7 +1,7 @@
 ﻿using System.Net;
-using Sonarr.Http.Exceptions;
+using Readarr.Http.Exceptions;
 
-namespace Sonarr.Http.REST
+namespace Readarr.Http.REST
 {
     public class BadRequestException : ApiException
     {

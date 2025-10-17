@@ -8,12 +8,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.Filters;
 using NLog;
-using NzbDrone.Common.Instrumentation;
-using NzbDrone.Core.Datastore;
-using Sonarr.Http.REST.Attributes;
-using Sonarr.Http.Validation;
+using Readarr.Common.Instrumentation;
+using Readarr.Core.Datastore;
+using Readarr.Http.REST.Attributes;
+using Readarr.Http.Validation;
 
-namespace Sonarr.Http.REST
+namespace Readarr.Http.REST
 {
     public abstract class RestController<TResource> : Controller
         where TResource : RestResource, new()
@@ -38,7 +38,7 @@ namespace Sonarr.Http.REST
 
         protected RestController()
         {
-            _logger = NzbDroneLogger.GetLogger(this);
+            _logger = ReadarrLogger.GetLogger(this);
 
             PostValidator = new ResourceValidator<TResource>();
             PutValidator = new ResourceValidator<TResource>();

@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Core.CustomFormats;
-using NzbDrone.Core.DecisionEngine.Specifications;
-using NzbDrone.Core.Tv;
-using NzbDrone.SignalR;
-using Sonarr.Http;
-using Sonarr.Http.REST;
-using Sonarr.Http.REST.Attributes;
+using Readarr.Core.CustomFormats;
+using Readarr.Core.DecisionEngine.Specifications;
+using Readarr.Core.Tv;
+using Readarr.SignalR;
+using Readarr.Http;
+using Readarr.Http.REST;
+using Readarr.Http.REST.Attributes;
 
-namespace Sonarr.Api.V3.Episodes
+namespace Readarr.Api.V3.Episodes
 {
     [V3ApiController]
     public class EpisodeController : EpisodeControllerWithSignalR

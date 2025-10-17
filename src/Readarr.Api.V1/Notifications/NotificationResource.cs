@@ -1,6 +1,6 @@
-using NzbDrone.Core.Notifications;
+using Readarr.Core.Notifications;
 
-namespace Sonarr.Api.V3.Notifications
+namespace Readarr.Api.V3.Notifications
 {
     public class NotificationResource : ProviderResource<NotificationResource>
     {

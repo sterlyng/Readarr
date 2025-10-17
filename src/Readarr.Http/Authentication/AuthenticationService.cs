@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Http;
 using NLog;
-using NzbDrone.Core.Authentication;
-using NzbDrone.Core.Configuration;
-using Sonarr.Http.Extensions;
+using Readarr.Core.Authentication;
+using Readarr.Core.Configuration;
+using Readarr.Http.Extensions;
 
-namespace Sonarr.Http.Authentication
+namespace Readarr.Http.Authentication
 {
     public interface IAuthenticationService
     {

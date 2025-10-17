@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Core.Tv;
-using Sonarr.Http;
+using Readarr.Core.Tv;
+using Readarr.Http;
 
-namespace Sonarr.Api.V3.Series
+namespace Readarr.Api.V3.Series
 {
     [V3ApiController("series/import")]
     public class SeriesImportController : Controller

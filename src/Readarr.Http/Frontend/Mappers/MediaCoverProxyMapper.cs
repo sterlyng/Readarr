@@ -4,9 +4,9 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
-using NzbDrone.Core.MediaCover;
+using Readarr.Core.MediaCover;
 
-namespace Sonarr.Http.Frontend.Mappers
+namespace Readarr.Http.Frontend.Mappers
 {
     public class MediaCoverProxyMapper : IMapHttpRequestsToDisk
     {

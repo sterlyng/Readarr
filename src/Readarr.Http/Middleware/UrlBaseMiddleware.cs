@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using NzbDrone.Common.Extensions;
+using Readarr.Common.Extensions;
 
-namespace Sonarr.Http.Middleware
+namespace Readarr.Http.Middleware
 {
     public class UrlBaseMiddleware
     {

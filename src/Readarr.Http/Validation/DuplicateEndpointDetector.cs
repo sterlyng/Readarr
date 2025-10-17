@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.AspNetCore.Routing.Matching;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Sonarr.Http.Validation
+namespace Readarr.Http.Validation
 {
     public interface IDfaMatcherBuilder
     {
@@ -74,7 +74,7 @@ namespace Sonarr.Http.Validation
 
                 // We can safely index into visited because this is a post-order traversal,
                 // all of the children of this node are already in the dictionary.
-                var filteredMatches = node?.Matches?.Where(x => !x.DisplayName.StartsWith("Sonarr.Http.Frontend.StaticResourceController")).ToList();
+                var filteredMatches = node?.Matches?.Where(x => !x.DisplayName.StartsWith("Readarr.Http.Frontend.StaticResourceController")).ToList();
                 var matchCount = filteredMatches?.Count ?? 0;
                 if (matchCount > 1)
                 {

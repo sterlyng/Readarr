@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Core.DiskSpace;
-using Sonarr.Http;
+using Readarr.Core.DiskSpace;
+using Readarr.Http;
 
-namespace Sonarr.Api.V3.DiskSpace
+namespace Readarr.Api.V3.DiskSpace
 {
     [V3ApiController("diskspace")]
     public class DiskSpaceController : Controller

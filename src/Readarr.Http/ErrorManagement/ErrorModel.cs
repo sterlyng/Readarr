@@ -1,10 +1,10 @@
 ﻿using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using NzbDrone.Common.Serializer;
-using Sonarr.Http.Exceptions;
+using Readarr.Common.Serializer;
+using Readarr.Http.Exceptions;
 
-namespace Sonarr.Http.ErrorManagement
+namespace Readarr.Http.ErrorManagement
 {
     public class ErrorModel
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 
-namespace Sonarr.Http.Exceptions
+namespace Readarr.Http.Exceptions
 {
     public abstract class ApiException : Exception
     {

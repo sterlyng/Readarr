@@ -3,10 +3,10 @@ using System.Security.Cryptography.X509Certificates;
 using FluentValidation;
 using FluentValidation.Validators;
 using NLog;
-using NzbDrone.Common.Extensions;
-using NzbDrone.Common.Instrumentation;
+using Readarr.Common.Extensions;
+using Readarr.Common.Instrumentation;
 
-namespace Sonarr.Api.V3.Config
+namespace Readarr.Api.V3.Config
 {
     public static class CertificateValidation
     {
@@ -20,7 +20,7 @@ namespace Sonarr.Api.V3.Config
     {
         protected override string GetDefaultMessageTemplate() => "Invalid SSL certificate file or {passwordOrKey}. {message}";
 
-        private static readonly Logger Logger = NzbDroneLogger.GetLogger(typeof(CertificateValidator));
+        private static readonly Logger Logger = ReadarrLogger.GetLogger(typeof(CertificateValidator));
 
         protected override bool IsValid(PropertyValidatorContext context)
         {

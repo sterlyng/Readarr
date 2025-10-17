@@ -96,13 +96,13 @@ function merge(initialState, persistedState) {
   return computedState;
 }
 
-const KEY = 'sonarr';
+const KEY = 'Readarr';
 
 const config = {
   slicer,
   serialize,
   merge,
-  key: window.Sonarr.instanceName.toLowerCase().replace(/ /g, '_') || KEY
+  key: window.Readarr.instanceName.toLowerCase().replace(/ /g, '_') || KEY
 };
 
 export default function createPersistState() {

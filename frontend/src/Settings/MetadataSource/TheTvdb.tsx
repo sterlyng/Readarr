@@ -8,7 +8,7 @@ function TheTvdb() {
     <div className={styles.container}>
       <img
         className={styles.image}
-        src={`${window.Sonarr.urlBase}/Content/Images/thetvdb.png`}
+        src={`${window.Readarr.urlBase}/Content/Images/thetvdb.png`}
       />
 
       <div className={styles.info}>

@@ -1,6 +1,6 @@
 using System;
 
-namespace Sonarr.Http.ClientSchema
+namespace Readarr.Http.ClientSchema
 {
     public class FieldMapping
     {

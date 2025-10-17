@@ -1,10 +1,10 @@
-using NzbDrone.Common.Extensions;
-using NzbDrone.Core.Languages;
-using NzbDrone.Core.MediaCover;
-using NzbDrone.Core.Tv;
-using Sonarr.Http.REST;
+using Readarr.Common.Extensions;
+using Readarr.Core.Languages;
+using Readarr.Core.MediaCover;
+using Readarr.Core.Tv;
+using Readarr.Http.REST;
 
-namespace Sonarr.Api.V5.Series;
+namespace Readarr.Api.V5.Series;
 
 public class SeriesResource : RestResource
 {
@@ -57,7 +57,7 @@ public class SeriesResource : RestResource
 
 public static class SeriesResourceMapper
 {
-    public static SeriesResource ToResource(this NzbDrone.Core.Tv.Series model, bool includeSeasonImages = false)
+    public static SeriesResource ToResource(this Readarr.Core.Tv.Series model, bool includeSeasonImages = false)
     {
         return new SeriesResource
         {
@@ -100,9 +100,9 @@ public static class SeriesResourceMapper
         };
     }
 
-    public static NzbDrone.Core.Tv.Series ToModel(this SeriesResource resource)
+    public static Readarr.Core.Tv.Series ToModel(this SeriesResource resource)
     {
-        return new NzbDrone.Core.Tv.Series
+        return new Readarr.Core.Tv.Series
         {
             Id = resource.Id,
             Title = resource.Title,
@@ -143,7 +143,7 @@ public static class SeriesResourceMapper
         };
     }
 
-    public static NzbDrone.Core.Tv.Series ToModel(this SeriesResource resource, NzbDrone.Core.Tv.Series series)
+    public static Readarr.Core.Tv.Series ToModel(this SeriesResource resource, Readarr.Core.Tv.Series series)
     {
         var updatedSeries = resource.ToModel();
 
@@ -152,13 +152,13 @@ public static class SeriesResourceMapper
         return series;
     }
 
-    public static List<SeriesResource> ToResource(this IEnumerable<NzbDrone.Core.Tv.Series> series,
+    public static List<SeriesResource> ToResource(this IEnumerable<Readarr.Core.Tv.Series> series,
         bool includeSeasonImages = false)
     {
         return series.Select(s => ToResource(s, includeSeasonImages)).ToList();
     }
 
-    public static List<NzbDrone.Core.Tv.Series> ToModel(this IEnumerable<SeriesResource> resources)
+    public static List<Readarr.Core.Tv.Series> ToModel(this IEnumerable<SeriesResource> resources)
     {
         return resources.Select(ToModel).ToList();
     }

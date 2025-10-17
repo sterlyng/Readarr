@@ -33,8 +33,8 @@ export interface FetchJsonOptions<TData> extends Omit<RequestInit, 'body'> {
   timeout?: number;
 }
 
-export const urlBase = window.Sonarr.urlBase;
-export const apiRoot = '/api/v5'; // window.Sonarr.apiRoot;
+export const urlBase = window.Readarr.urlBase;
+export const apiRoot = '/api/v5'; // window.Readarr.apiRoot;
 
 async function fetchJson<T, TData>({
   body,

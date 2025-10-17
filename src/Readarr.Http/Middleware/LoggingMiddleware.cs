@@ -4,11 +4,11 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using NLog;
-using NzbDrone.Common.Extensions;
-using Sonarr.Http.ErrorManagement;
-using Sonarr.Http.Extensions;
+using Readarr.Common.Extensions;
+using Readarr.Http.ErrorManagement;
+using Readarr.Http.Extensions;
 
-namespace Sonarr.Http.Middleware
+namespace Readarr.Http.Middleware
 {
     public class LoggingMiddleware
     {
@@ -16,11 +16,11 @@ namespace Sonarr.Http.Middleware
         private static readonly Logger _loggerApi = LogManager.GetLogger("Api");
         private static int _requestSequenceID;
 
-        private readonly SonarrErrorPipeline _errorHandler;
+        private readonly ReadarrErrorPipeline _errorHandler;
         private readonly RequestDelegate _next;
 
         public LoggingMiddleware(RequestDelegate next,
-            SonarrErrorPipeline errorHandler)
+            ReadarrErrorPipeline errorHandler)
         {
             _next = next;
             _errorHandler = errorHandler;

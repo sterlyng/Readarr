@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
-using NzbDrone.Core.RootFolders;
-using NzbDrone.Core.Validation.Paths;
-using NzbDrone.SignalR;
-using Sonarr.Http;
-using Sonarr.Http.Extensions;
-using Sonarr.Http.REST;
-using Sonarr.Http.REST.Attributes;
+using Readarr.Core.RootFolders;
+using Readarr.Core.Validation.Paths;
+using Readarr.SignalR;
+using Readarr.Http;
+using Readarr.Http.Extensions;
+using Readarr.Http.REST;
+using Readarr.Http.REST.Attributes;
 
-namespace Sonarr.Api.V3.RootFolders
+namespace Readarr.Api.V3.RootFolders
 {
     [V3ApiController]
     public class RootFolderController : RestControllerWithSignalR<RootFolderResource, RootFolder>
