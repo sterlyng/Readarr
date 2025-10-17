@@ -18,8 +18,8 @@ RUN  fromdos /startup.sh
 WORKDIR /data/
 VOLUME ["/data/_tests_linux", "/data/_output_linux", "/data/_tests_results"]
  
-RUN groupadd sonarrtst -g 4020 && useradd sonarrtst -u 4021 -g 4020 -m -s /bin/bash
-USER sonarrtst
+RUN groupadd Readarrtst -g 4020 && useradd Readarrtst -u 4021 -g 4020 -m -s /bin/bash
+USER Readarrtst
 
 CMD bash /startup.sh
 
