@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using NUnit.Framework;
-using Readarr.Api.V3.Blocklist;
-using Readarr.Api.V3.Series;
+using Readarr.Api.V1.Blocklist;
+using Readarr.Api.V1.Series;
 
 namespace Readarr.Integration.Test.ApiTests
 {

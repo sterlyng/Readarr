@@ -14,13 +14,13 @@ using Readarr.Core.Messaging.Events;
 using Readarr.Core.Parser;
 using Readarr.Core.Parser.Model;
 using Readarr.Core.Tv;
-using Readarr.SignalR;
 using Readarr.Http;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
+using Readarr.SignalR;
 using BadRequestException = Readarr.Http.REST.BadRequestException;
 
-namespace Readarr.Api.V3.EpisodeFiles
+namespace Readarr.Api.V1.EpisodeFiles
 {
     [V3ApiController]
     public class EpisodeFileController : RestControllerWithSignalR<EpisodeFileResource, EpisodeFile>,

@@ -1,9 +1,9 @@
 using FluentValidation;
 using Readarr.Core.Download;
-using Readarr.SignalR;
 using Readarr.Http;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3.DownloadClient
+namespace Readarr.Api.V1.DownloadClient
 {
     [V3ApiController]
     public class DownloadClientController : ProviderControllerBase<DownloadClientResource, DownloadClientBulkResource, IDownloadClient, DownloadClientDefinition>

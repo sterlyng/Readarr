@@ -4,20 +4,20 @@ using System.IO;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Common.Composition;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.System.Text.Json;
 using Readarr.Common.TPL;
 using Readarr.Core.Datastore.Events;
 using Readarr.Core.MediaFiles.EpisodeImport.Manual;
 using Readarr.Core.Messaging.Commands;
 using Readarr.Core.Messaging.Events;
 using Readarr.Core.ProgressMessaging;
-using Readarr.SignalR;
 using Readarr.Http;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
 using Readarr.Http.Validation;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3.Commands
+namespace Readarr.Api.V1.Commands
 {
     [V3ApiController]
     public class CommandController : RestControllerWithSignalR<CommandResource, CommandModel>, IHandle<CommandUpdatedEvent>

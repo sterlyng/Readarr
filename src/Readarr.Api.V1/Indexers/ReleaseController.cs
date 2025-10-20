@@ -20,7 +20,7 @@ using Readarr.Core.Validation;
 using Readarr.Http;
 using HttpStatusCode = System.Net.HttpStatusCode;
 
-namespace Readarr.Api.V3.Indexers
+namespace Readarr.Api.V1.Indexers
 {
     [V3ApiController]
     public class ReleaseController : ReleaseControllerBase

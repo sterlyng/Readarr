@@ -9,7 +9,7 @@ using NUnit.Framework;
 using Readarr.Common.EnvironmentInfo;
 using Readarr.Common.Extensions;
 using Readarr.Common.Processes;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Configuration;
 using Readarr.Core.Datastore;
 using RestSharp;

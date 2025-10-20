@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Readarr.Core.Tv;
 
-namespace Readarr.Api.V3.SeasonPass
+namespace Readarr.Api.V1.SeasonPass
 {
     public class SeasonPassResource
     {

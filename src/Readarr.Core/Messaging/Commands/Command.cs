@@ -1,6 +1,6 @@
 using System;
 using System.Text.Json.Serialization;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.System.Text.Json;
 
 namespace Readarr.Core.Messaging.Commands
 {

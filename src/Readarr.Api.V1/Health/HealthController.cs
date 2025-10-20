@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using Readarr.Core.Datastore.Events;
 using Readarr.Core.HealthCheck;
 using Readarr.Core.Messaging.Events;
-using Readarr.SignalR;
 using Readarr.Http;
 using Readarr.Http.REST;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3.Health
+namespace Readarr.Api.V1.Health
 {
     [V3ApiController]
     public class HealthController : RestControllerWithSignalR<HealthResource, HealthCheck>,

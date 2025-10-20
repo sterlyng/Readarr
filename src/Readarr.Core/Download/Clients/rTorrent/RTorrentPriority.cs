@@ -1,4 +1,4 @@
-namespace Readarr.Core.Download.Clients.RTorrent
+namespace Readarr.Core.Download.Clients.rTorrent
 {
     public enum RTorrentPriority
     {

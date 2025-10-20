@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.System.Text.Json;
 using Readarr.Http.Exceptions;
 
 namespace Readarr.Http.ErrorManagement

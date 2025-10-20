@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Moq;
 using NUnit.Framework;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Download;
 using Readarr.Core.Download.Clients.Transmission;
 using Readarr.Core.MediaFiles.TorrentInfo;

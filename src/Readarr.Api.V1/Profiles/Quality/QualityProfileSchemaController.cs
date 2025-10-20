@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Readarr.Core.Profiles.Qualities;
 using Readarr.Http;
 
-namespace Readarr.Api.V3.Profiles.Quality
+namespace Readarr.Api.V1.Profiles.Quality
 {
     [V3ApiController("qualityprofile/schema")]
     public class QualityProfileSchemaController : Controller

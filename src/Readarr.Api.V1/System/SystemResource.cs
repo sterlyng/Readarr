@@ -4,7 +4,7 @@ using Readarr.Core.Authentication;
 using Readarr.Core.Datastore;
 using Readarr.Core.Update;
 
-namespace Readarr.Api.V3.System
+namespace Readarr.Api.V1.System
 {
     public class SystemResource
     {

@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Common.Extensions;
 using Readarr.Core.Blocklisting;
@@ -12,13 +15,13 @@ using Readarr.Core.Messaging.Events;
 using Readarr.Core.Profiles.Qualities;
 using Readarr.Core.Qualities;
 using Readarr.Core.Queue;
-using Readarr.SignalR;
 using Readarr.Http;
 using Readarr.Http.Extensions;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V5.Queue
+namespace Readarr.Api.V1.Queue
 {
     [V5ApiController]
     public class QueueController : RestControllerWithSignalR<QueueResource, Readarr.Core.Queue.Queue>,
@@ -68,7 +71,7 @@ namespace Readarr.Api.V5.Queue
         }
 
         [RestDeleteById]
-        public ActionResult RemoveAction(int id, string? message = null, bool removeFromClient = true, bool blocklist = false, bool skipRedownload = false, bool changeCategory = false)
+        public ActionResult RemoveAction(int id, string message = null, bool removeFromClient = true, bool blocklist = false, bool skipRedownload = false, bool changeCategory = false)
         {
             var pendingRelease = _pendingReleaseService.FindPendingQueueItem(id);
 
@@ -93,7 +96,7 @@ namespace Readarr.Api.V5.Queue
         }
 
         [HttpDelete("bulk")]
-        public object RemoveMany([FromBody] QueueBulkResource resource, [FromQuery] string? message, [FromQuery] bool removeFromClient = true, [FromQuery] bool blocklist = false, [FromQuery] bool skipRedownload = false, [FromQuery] bool changeCategory = false)
+        public object RemoveMany([FromBody] QueueBulkResource resource, [FromQuery] string message, [FromQuery] bool removeFromClient = true, [FromQuery] bool blocklist = false, [FromQuery] bool skipRedownload = false, [FromQuery] bool changeCategory = false)
         {
             var trackedDownloadIds = new List<string>();
             var pendingToRemove = new List<Readarr.Core.Queue.Queue>();
@@ -135,7 +138,7 @@ namespace Readarr.Api.V5.Queue
 
         [HttpGet]
         [Produces("application/json")]
-        public PagingResource<QueueResource> GetQueue([FromQuery] PagingRequestResource paging, bool includeUnknownSeriesItems = false, bool includeSeries = false, bool includeEpisodes = false, [FromQuery] int[]? seriesIds = null, DownloadProtocol? protocol = null, [FromQuery] int[]? languages = null, [FromQuery] int[]? quality = null, [FromQuery] QueueStatus[]? status = null)
+        public PagingResource<QueueResource> GetQueue([FromQuery] PagingRequestResource paging, bool includeUnknownSeriesItems = false, bool includeSeries = false, bool includeEpisodes = false, [FromQuery] int[] seriesIds = null, DownloadProtocol? protocol = null, [FromQuery] int[] languages = null, [FromQuery] int[] quality = null, [FromQuery] QueueStatus[] status = null)
         {
             var pagingResource = new PagingResource<QueueResource>(paging);
             var pagingSpec = pagingResource.MapToPagingSpec<QueueResource, Readarr.Core.Queue.Queue>(
@@ -281,7 +284,7 @@ namespace Readarr.Api.V5.Queue
             return pagingSpec;
         }
 
-        private Func<Readarr.Core.Queue.Queue, object?> GetOrderByFunc(PagingSpec<Readarr.Core.Queue.Queue> pagingSpec)
+        private Func<Readarr.Core.Queue.Queue, object> GetOrderByFunc(PagingSpec<Readarr.Core.Queue.Queue> pagingSpec)
         {
             switch (pagingSpec.SortKey)
             {
@@ -314,7 +317,7 @@ namespace Readarr.Api.V5.Queue
             }
         }
 
-        private void Remove(Readarr.Core.Queue.Queue pendingRelease, string? message, bool blocklist)
+        private void Remove(Readarr.Core.Queue.Queue pendingRelease, string message, bool blocklist)
         {
             if (blocklist)
             {
@@ -324,7 +327,7 @@ namespace Readarr.Api.V5.Queue
             _pendingReleaseService.RemovePendingQueueItems(pendingRelease.Id);
         }
 
-        private TrackedDownload? Remove(TrackedDownload trackedDownload, string? message, bool removeFromClient, bool blocklist, bool skipRedownload, bool changeCategory)
+        private TrackedDownload Remove(TrackedDownload trackedDownload, string message, bool removeFromClient, bool blocklist, bool skipRedownload, bool changeCategory)
         {
             if (removeFromClient)
             {

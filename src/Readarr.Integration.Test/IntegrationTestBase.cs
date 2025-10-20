@@ -10,6 +10,17 @@ using NLog;
 using NLog.Config;
 using NLog.Targets;
 using NUnit.Framework;
+using Readarr.Api.V1.Blocklist;
+using Readarr.Api.V1.Config;
+using Readarr.Api.V1.DownloadClient;
+using Readarr.Api.V1.EpisodeFiles;
+using Readarr.Api.V1.Episodes;
+using Readarr.Api.V1.History;
+using Readarr.Api.V1.Profiles.Quality;
+using Readarr.Api.V1.RootFolders;
+using Readarr.Api.V1.Series;
+using Readarr.Api.V1.System.Tasks;
+using Readarr.Api.V1.Tags;
 using Readarr.Common.EnvironmentInfo;
 using Readarr.Common.Processes;
 using Readarr.Core.Qualities;
@@ -18,17 +29,6 @@ using Readarr.Integration.Test.Client;
 using Readarr.SignalR;
 using Readarr.Test.Common.Categories;
 using RestSharp;
-using Readarr.Api.V3.Blocklist;
-using Readarr.Api.V3.Config;
-using Readarr.Api.V3.DownloadClient;
-using Readarr.Api.V3.EpisodeFiles;
-using Readarr.Api.V3.Episodes;
-using Readarr.Api.V3.History;
-using Readarr.Api.V3.Profiles.Quality;
-using Readarr.Api.V3.RootFolders;
-using Readarr.Api.V3.Series;
-using Readarr.Api.V3.System.Tasks;
-using Readarr.Api.V3.Tags;
 
 namespace Readarr.Integration.Test
 {

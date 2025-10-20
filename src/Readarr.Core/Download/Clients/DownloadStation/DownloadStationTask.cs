@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using Newtonsoft.Json;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 
 namespace Readarr.Core.Download.Clients.DownloadStation
 {

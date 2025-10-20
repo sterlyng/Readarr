@@ -4,7 +4,7 @@ using Readarr.Common.Extensions;
 using Readarr.Core.Annotations;
 using Readarr.Core.Validation;
 
-namespace Readarr.Core.Notifications.Emby
+namespace Readarr.Core.Notifications.MediaBrowser
 {
     public class MediaBrowserSettingsValidator : AbstractValidator<MediaBrowserSettings>
     {

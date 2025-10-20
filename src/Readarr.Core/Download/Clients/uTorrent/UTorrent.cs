@@ -17,7 +17,7 @@ using Readarr.Core.RemotePathMappings;
 using Readarr.Core.ThingiProvider;
 using Readarr.Core.Validation;
 
-namespace Readarr.Core.Download.Clients.UTorrent
+namespace Readarr.Core.Download.Clients.uTorrent
 {
     public class UTorrent : TorrentClientBase<UTorrentSettings>
     {

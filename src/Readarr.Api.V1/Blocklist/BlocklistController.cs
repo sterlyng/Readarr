@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Core.Blocklisting;
 using Readarr.Core.CustomFormats;
@@ -7,7 +10,7 @@ using Readarr.Http;
 using Readarr.Http.Extensions;
 using Readarr.Http.REST.Attributes;
 
-namespace Readarr.Api.V5.Blocklist;
+namespace Readarr.Api.V1.Blocklist;
 
 [V5ApiController]
 public class BlocklistController : Controller
@@ -24,7 +27,7 @@ public class BlocklistController : Controller
 
     [HttpGet]
     [Produces("application/json")]
-    public PagingResource<BlocklistResource> GetBlocklist([FromQuery] PagingRequestResource paging, [FromQuery] int[]? seriesIds = null, [FromQuery] DownloadProtocol[]? protocols = null)
+    public PagingResource<BlocklistResource> GetBlocklist([FromQuery] PagingRequestResource paging, [FromQuery] int[] seriesIds = null, [FromQuery] DownloadProtocol[] protocols = null)
     {
         var pagingResource = new PagingResource<BlocklistResource>(paging);
         var pagingSpec = pagingResource.MapToPagingSpec<BlocklistResource, Readarr.Core.Blocklisting.Blocklist>(

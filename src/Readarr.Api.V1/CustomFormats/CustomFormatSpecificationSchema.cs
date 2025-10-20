@@ -1,8 +1,9 @@
-using Readarr.Core.CustomFormats;
+using System.Collections.Generic;
+using Readarr.Core.CustomFormats.Specifications;
 using Readarr.Http.ClientSchema;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V5.CustomFormats
+namespace Readarr.Api.V1.CustomFormats
 {
     public class CustomFormatSpecificationSchema : RestResource
     {
@@ -13,7 +14,7 @@ namespace Readarr.Api.V5.CustomFormats
         public bool Negate { get; set; }
         public bool Required { get; set; }
         public required List<Field> Fields { get; set; }
-        public List<CustomFormatSpecificationSchema>? Presets { get; set; }
+        public List<CustomFormatSpecificationSchema> Presets { get; set; }
     }
 
     public static class CustomFormatSpecificationSchemaMapper

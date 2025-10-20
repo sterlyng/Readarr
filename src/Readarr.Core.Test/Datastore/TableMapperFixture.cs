@@ -4,6 +4,7 @@ using FluentAssertions;
 using NUnit.Framework;
 using Readarr.Core.Datastore;
 using Readarr.Core.Datastore.Converters;
+using Readarr.Core.Datastore.Extensions;
 using Readarr.Core.Tv;
 
 namespace Readarr.Core.Test.Datastore

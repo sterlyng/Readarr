@@ -7,7 +7,7 @@ using Readarr.Common.Extensions;
 using Readarr.Core.MediaFiles;
 using Readarr.Core.Tv;
 
-namespace Readarr.Core.Notifications.Emby
+namespace Readarr.Core.Notifications.MediaBrowser
 {
     public class MediaBrowser : NotificationBase<MediaBrowserSettings>
     {

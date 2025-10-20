@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Datastore.Migration;
 using Readarr.Core.Datastore.Migration.Framework;
 using Readarr.Core.Test.Framework;

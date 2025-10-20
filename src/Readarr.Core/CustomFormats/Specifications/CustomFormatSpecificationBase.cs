@@ -1,6 +1,6 @@
 using Readarr.Core.Validation;
 
-namespace Readarr.Core.CustomFormats
+namespace Readarr.Core.CustomFormats.Specifications
 {
     public abstract class CustomFormatSpecificationBase : ICustomFormatSpecification
     {

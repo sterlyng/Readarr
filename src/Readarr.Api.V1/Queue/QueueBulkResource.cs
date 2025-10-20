@@ -1,4 +1,6 @@
-﻿namespace Readarr.Api.V5.Queue
+﻿using System.Collections.Generic;
+
+namespace Readarr.Api.V1.Queue
 {
     public class QueueBulkResource
     {

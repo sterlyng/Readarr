@@ -1,12 +1,12 @@
 using System.Collections.Generic;
+using Readarr.Api.V1.CustomFormats;
+using Readarr.Api.V1.Episodes;
 using Readarr.Core.Languages;
 using Readarr.Core.Parser.Model;
 using Readarr.Core.Qualities;
-using Readarr.Api.V3.CustomFormats;
-using Readarr.Api.V3.Episodes;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.ManualImport
+namespace Readarr.Api.V1.ManualImport
 {
     public class ManualImportReprocessResource : RestResource
     {

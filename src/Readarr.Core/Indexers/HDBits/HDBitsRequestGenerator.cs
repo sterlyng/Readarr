@@ -3,7 +3,7 @@ using System.Linq;
 using System.Net.Http;
 using Newtonsoft.Json;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.IndexerSearch.Definitions;
 
 namespace Readarr.Core.Indexers.HDBits

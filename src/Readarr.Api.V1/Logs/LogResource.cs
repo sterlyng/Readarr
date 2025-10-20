@@ -1,13 +1,14 @@
+using System;
 using Readarr.Core.Instrumentation;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V5.Logs
+namespace Readarr.Api.V1.Logs
 {
     public class LogResource : RestResource
     {
         public DateTime Time { get; set; }
-        public string? Exception { get; set; }
-        public string? ExceptionType { get; set; }
+        public string Exception { get; set; }
+        public string ExceptionType { get; set; }
         public required string Level { get; set; }
         public required string Logger { get; set; }
         public required string Message { get; set; }

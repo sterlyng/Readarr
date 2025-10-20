@@ -1,6 +1,6 @@
 using Newtonsoft.Json.Linq;
 
-namespace Readarr.Common.Serializer
+namespace Readarr.Common.Serializer.Newtonsoft.Json
 {
     public class JsonVisitor
     {

@@ -4,8 +4,9 @@ using System.Text.Json.Serialization;
 using Dapper;
 using Readarr.Common.Extensions;
 using Readarr.Common.Reflection;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.System.Text.Json;
 using Readarr.Core.Datastore;
+using Readarr.Core.Datastore.Extensions;
 using Readarr.Core.Messaging.Events;
 
 namespace Readarr.Core.ThingiProvider

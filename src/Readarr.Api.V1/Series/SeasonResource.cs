@@ -1,14 +1,16 @@
+using System.Collections.Generic;
+using System.Linq;
 using Readarr.Core.MediaCover;
 using Readarr.Core.Tv;
 
-namespace Readarr.Api.V5.Series;
+namespace Readarr.Api.V1.Series;
 
 public class SeasonResource
 {
     public int SeasonNumber { get; set; }
     public bool Monitored { get; set; }
-    public SeasonStatisticsResource? Statistics { get; set; }
-    public List<MediaCover>? Images { get; set; }
+    public SeasonStatisticsResource Statistics { get; set; }
+    public List<MediaCover> Images { get; set; }
 }
 
 public static class SeasonResourceMapper

@@ -6,7 +6,7 @@ using NUnit.Framework;
 using Readarr.Core.Profiles.Releases;
 using Readarr.Core.Test.Framework;
 
-namespace Readarr.Core.Test.Profiles
+namespace Readarr.Core.Test.Profiles.Release
 {
     [TestFixture]
     public class ReleaseProfileServiceFixture : CoreTest<ReleaseProfileService>

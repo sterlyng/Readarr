@@ -6,7 +6,7 @@ using NLog;
 using Readarr.Common.Disk;
 using Readarr.Core.Configuration;
 
-namespace Readarr.Api.V3.Logs
+namespace Readarr.Api.V1.Logs
 {
     public abstract class LogFileControllerBase : Controller
     {

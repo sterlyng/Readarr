@@ -7,7 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Moq;
 using NUnit.Framework;
-using Readarr.Common.Composition.Extensions;
+using Readarr.Common.Composition;
 using Readarr.Common.EnvironmentInfo;
 using Readarr.Common.Instrumentation.Extensions;
 using Readarr.Common.Options;

@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Readarr.Common.Http;
 
-namespace Readarr.Common.Serializer
+namespace Readarr.Common.Serializer.Newtonsoft.Json
 {
     public class HttpUriConverter : JsonConverter
     {

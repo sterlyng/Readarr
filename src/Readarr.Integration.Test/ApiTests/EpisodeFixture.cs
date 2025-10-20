@@ -2,8 +2,8 @@ using System.Linq;
 using System.Threading;
 using FluentAssertions;
 using NUnit.Framework;
+using Readarr.Api.V1.Series;
 using Readarr.Test.Common;
-using Readarr.Api.V3.Series;
 
 namespace Readarr.Integration.Test.ApiTests
 {

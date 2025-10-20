@@ -1,10 +1,11 @@
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Core.Download;
 using Readarr.Core.Download.Pending;
 using Readarr.Http;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V5.Queue
+namespace Readarr.Api.V1.Queue
 {
     [V5ApiController("queue")]
     public class QueueActionController : Controller

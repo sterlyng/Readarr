@@ -6,7 +6,7 @@ using Readarr.Http;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
 
-namespace Readarr.Api.V3.Profiles.Languages
+namespace Readarr.Api.V1.Profiles.Languages
 {
     [V3ApiController]
     [Obsolete("Deprecated")]

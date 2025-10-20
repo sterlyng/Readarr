@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Readarr.Core.Tv;
 using Readarr.Http;
 
-namespace Readarr.Api.V3.Series
+namespace Readarr.Api.V1.Series
 {
     [V3ApiController("series/import")]
     public class SeriesImportController : Controller

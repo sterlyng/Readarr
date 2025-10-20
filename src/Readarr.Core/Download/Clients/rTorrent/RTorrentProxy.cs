@@ -8,7 +8,7 @@ using Readarr.Common.Extensions;
 using Readarr.Common.Http;
 using Readarr.Core.Download.Extensions;
 
-namespace Readarr.Core.Download.Clients.RTorrent
+namespace Readarr.Core.Download.Clients.rTorrent
 {
     public interface IRTorrentProxy
     {

@@ -10,7 +10,7 @@ using Readarr.Http;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
 
-namespace Readarr.Api.V3.Profiles.Release
+namespace Readarr.Api.V1.Profiles.Release
 {
     [V3ApiController]
     public class ReleaseProfileController : RestController<ReleaseProfileResource>

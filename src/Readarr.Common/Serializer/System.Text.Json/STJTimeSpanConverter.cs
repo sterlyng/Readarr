@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Readarr.Common.Serializer
+namespace Readarr.Common.Serializer.System.Text.Json
 {
     public class STJTimeSpanConverter : JsonConverter<TimeSpan>
     {

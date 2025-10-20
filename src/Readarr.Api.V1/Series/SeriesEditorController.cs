@@ -8,7 +8,7 @@ using Readarr.Core.Tv;
 using Readarr.Core.Tv.Commands;
 using Readarr.Http;
 
-namespace Readarr.Api.V3.Series
+namespace Readarr.Api.V1.Series
 {
     [V3ApiController("series/editor")]
     public class SeriesEditorController : Controller

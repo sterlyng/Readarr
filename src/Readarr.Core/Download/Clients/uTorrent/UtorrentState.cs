@@ -1,4 +1,4 @@
-﻿namespace Readarr.Core.Download.Clients.UTorrent
+﻿namespace Readarr.Core.Download.Clients.uTorrent
 {
     public enum UTorrentState
     {

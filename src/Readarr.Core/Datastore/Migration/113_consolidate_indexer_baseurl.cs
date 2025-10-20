@@ -2,7 +2,7 @@ using System.Data;
 using FluentMigrator;
 using Newtonsoft.Json.Linq;
 using Readarr.Common.Extensions;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Datastore.Migration.Framework;
 
 namespace Readarr.Core.Datastore.Migration

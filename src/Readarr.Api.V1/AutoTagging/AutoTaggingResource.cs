@@ -7,7 +7,7 @@ using Readarr.Core.AutoTagging.Specifications;
 using Readarr.Http.ClientSchema;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.AutoTagging
+namespace Readarr.Api.V1.AutoTagging
 {
     public class AutoTaggingResource : RestResource
     {

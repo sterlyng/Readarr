@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using NLog;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Download.Clients.Hadouken.Models;
 
 namespace Readarr.Core.Download.Clients.Hadouken

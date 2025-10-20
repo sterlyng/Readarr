@@ -1,14 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Common.Extensions;
 using Readarr.Core.Datastore.Events;
 using Readarr.Core.Download.Pending;
 using Readarr.Core.Messaging.Events;
 using Readarr.Core.Queue;
-using Readarr.SignalR;
 using Readarr.Http;
 using Readarr.Http.REST;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V5.Queue
+namespace Readarr.Api.V1.Queue
 {
     [V5ApiController("queue/details")]
     public class QueueDetailsController : RestControllerWithSignalR<QueueResource, Readarr.Core.Queue.Queue>,

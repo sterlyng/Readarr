@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace Readarr.Core.Download.Clients.Tribler
+namespace Readarr.Core.Download.Clients.Tribler.Models
 {
     public enum DownloadStatus
     {

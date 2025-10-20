@@ -1,16 +1,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Readarr.Api.V1.CustomFormats;
+using Readarr.Api.V1.Episodes;
 using Readarr.Common.Extensions;
 using Readarr.Core.Languages;
 using Readarr.Core.MediaFiles.EpisodeImport.Manual;
 using Readarr.Core.Qualities;
-using Readarr.Api.V3.CustomFormats;
-using Readarr.Api.V3.Episodes;
 using Readarr.Http;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.ManualImport
+namespace Readarr.Api.V1.ManualImport
 {
     [V3ApiController]
     public class ManualImportController : Controller

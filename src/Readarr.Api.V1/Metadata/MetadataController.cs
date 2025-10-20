@@ -1,10 +1,10 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Core.Extras.Metadata;
-using Readarr.SignalR;
 using Readarr.Http;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3.Metadata
+namespace Readarr.Api.V1.Metadata
 {
     [V3ApiController]
     public class MetadataController : ProviderControllerBase<MetadataResource, MetadataBulkResource, IMetadata, MetadataDefinition>

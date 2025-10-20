@@ -7,7 +7,7 @@ using Readarr.Common.Http;
 using Readarr.Core.Messaging.Commands;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Commands
+namespace Readarr.Api.V1.Commands
 {
     public class CommandResource : RestResource
     {
@@ -90,7 +90,7 @@ namespace Readarr.Api.V3.Commands
         {
             if (model == null)
             {
-                return null;
+                return null!;
             }
 
             return new CommandResource

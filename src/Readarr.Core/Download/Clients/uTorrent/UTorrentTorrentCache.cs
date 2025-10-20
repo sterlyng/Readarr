@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Readarr.Core.Download.Clients.UTorrent
+namespace Readarr.Core.Download.Clients.uTorrent
 {
     public class UTorrentTorrentCache
     {

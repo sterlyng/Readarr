@@ -7,7 +7,7 @@ using NLog;
 using Readarr.Common;
 using Readarr.Common.Composition;
 using Readarr.Common.EnsureThat;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Exceptions;
 using Readarr.Core.Lifecycle;
 using Readarr.Core.Messaging.Events;

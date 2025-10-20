@@ -7,7 +7,7 @@ using Readarr.Core.Languages;
 using Readarr.Http;
 using Readarr.Http.REST.Attributes;
 
-namespace Readarr.Api.V3.Config
+namespace Readarr.Api.V1.Config
 {
     [V3ApiController("config/ui")]
     public class UiConfigController : ConfigController<UiConfigResource>

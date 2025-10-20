@@ -13,7 +13,7 @@ using Readarr.Core.Tv;
 namespace Readarr.Core.Test.CustomFormats.Specifications.LanguageSpecification
 {
     [TestFixture]
-    public class OriginalLanguageFixture : CoreTest<Core.CustomFormats.LanguageSpecification>
+    public class OriginalLanguageFixture : CoreTest<Core.CustomFormats.Specifications.LanguageSpecification>
     {
         private CustomFormatInput _input;
 

@@ -11,7 +11,7 @@ using Readarr.Common.Instrumentation;
 using Readarr.Common.Instrumentation.Sentry;
 using Readarr.Core.Configuration;
 using Readarr.Core.Configuration.Events;
-using Readarr.Core.Datastore;
+using Readarr.Core.Datastore.Extensions;
 using Readarr.Core.Messaging.Events;
 
 namespace Readarr.Core.Instrumentation

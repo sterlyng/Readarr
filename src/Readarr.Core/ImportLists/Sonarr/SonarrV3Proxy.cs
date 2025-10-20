@@ -8,7 +8,7 @@ using Readarr.Common.Extensions;
 using Readarr.Common.Http;
 using Readarr.Core.Localization;
 
-namespace Readarr.Core.ImportLists.Readarr
+namespace Readarr.Core.ImportLists.Sonarr
 {
     public interface IReadarrV3Proxy
     {

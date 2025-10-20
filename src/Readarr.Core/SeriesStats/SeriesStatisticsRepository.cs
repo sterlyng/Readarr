@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Dapper;
 using Readarr.Core.Datastore;
+using Readarr.Core.Datastore.Extensions;
 using Readarr.Core.MediaFiles;
 using Readarr.Core.Tv;
 

@@ -7,7 +7,7 @@ using DryIoc;
 using Readarr.Common.EnsureThat;
 using Readarr.Common.Extensions;
 using Readarr.Common.Reflection;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.System.Text.Json;
 using Readarr.Core.Annotations;
 using Readarr.Core.Localization;
 

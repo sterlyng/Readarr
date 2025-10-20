@@ -1,7 +1,7 @@
 ﻿using System;
 using Readarr.Common.Messaging;
 
-namespace Readarr.Core.Update.History.Events
+namespace Readarr.Core.Update.Events
 {
     public class UpdateInstalledEvent : IEvent
     {

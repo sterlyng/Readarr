@@ -1,7 +1,6 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
 using Readarr.Common.Extensions;
-using Readarr.Core.Download.Clients.RTorrent;
 using Readarr.Core.Validation.Paths;
 
 namespace Readarr.Core.Download.Clients.rTorrent

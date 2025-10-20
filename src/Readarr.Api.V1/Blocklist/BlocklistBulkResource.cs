@@ -1,4 +1,6 @@
-﻿namespace Readarr.Api.V5.Blocklist;
+﻿using System.Collections.Generic;
+
+namespace Readarr.Api.V1.Blocklist;
 
 public class BlocklistBulkResource
 {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.ImportLists.Exceptions;
 using Readarr.Core.Notifications.Plex.PlexTv;
 using Readarr.Core.Notifications.Plex.Server;

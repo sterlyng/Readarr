@@ -3,7 +3,7 @@ using Readarr.Core.Organizer;
 using Readarr.Core.Tv;
 using Readarr.Http;
 
-namespace Readarr.Api.V5.Series;
+namespace Readarr.Api.V1.Series;
 
 [V5ApiController("series")]
 public class SeriesFolderController : Controller

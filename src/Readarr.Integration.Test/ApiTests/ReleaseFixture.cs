@@ -2,7 +2,7 @@
 using System.Net;
 using FluentAssertions;
 using NUnit.Framework;
-using Readarr.Api.V3.Indexers;
+using Readarr.Api.V1.Indexers;
 
 namespace Readarr.Integration.Test.ApiTests
 {

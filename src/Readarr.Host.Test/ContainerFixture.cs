@@ -9,7 +9,7 @@ using Microsoft.Extensions.Options;
 using Moq;
 using NUnit.Framework;
 using Readarr.Common;
-using Readarr.Common.Composition.Extensions;
+using Readarr.Common.Composition;
 using Readarr.Common.EnvironmentInfo;
 using Readarr.Common.Instrumentation.Extensions;
 using Readarr.Common.Options;
@@ -20,12 +20,11 @@ using Readarr.Core.Download.TrackedDownloads;
 using Readarr.Core.Indexers;
 using Readarr.Core.Messaging.Commands;
 using Readarr.Core.Messaging.Events;
-using Readarr.Host;
 using Readarr.SignalR;
 using Readarr.Test.Common;
 using IServiceProvider = System.IServiceProvider;
 
-namespace Readarr.App.Test
+namespace Readarr.Host.Test
 {
     [TestFixture]
     public class ContainerFixture : TestBase

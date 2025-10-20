@@ -2,15 +2,15 @@ using System.Collections.Generic;
 using System.Net.Http;
 using NLog;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
-using Readarr.Core.Indexers.Tribler;
+using Readarr.Common.Serializer.Newtonsoft.Json;
+using Readarr.Core.Download.Clients.Tribler.Models;
 
 namespace Readarr.Core.Download.Clients.Tribler
 {
     public interface ITriblerDownloadClientProxy
     {
-        List<Download> GetDownloads(TriblerDownloadSettings settings);
-        List<File> GetDownloadFiles(TriblerDownloadSettings settings, Download downloadItem);
+        List<Models.Download> GetDownloads(TriblerDownloadSettings settings);
+        List<File> GetDownloadFiles(TriblerDownloadSettings settings, Models.Download downloadItem);
         TriblerSettingsResponse GetConfig(TriblerDownloadSettings settings);
         void RemoveDownload(TriblerDownloadSettings settings, DownloadClientItem item, bool deleteData);
         string AddFromMagnetLink(TriblerDownloadSettings settings, AddDownloadRequest downloadRequest);
@@ -76,13 +76,13 @@ namespace Readarr.Core.Download.Clients.Tribler
             return ProcessRequest<TriblerSettingsResponse>(configRequest);
         }
 
-        public List<File> GetDownloadFiles(TriblerDownloadSettings settings, Download downloadItem)
+        public List<File> GetDownloadFiles(TriblerDownloadSettings settings, Models.Download downloadItem)
         {
             var filesRequest = GetRequestBuilder(settings, "api/downloads/" + downloadItem.Infohash + "/files");
             return ProcessRequest<GetFilesResponse>(filesRequest).Files;
         }
 
-        public List<Download> GetDownloads(TriblerDownloadSettings settings)
+        public List<Models.Download> GetDownloads(TriblerDownloadSettings settings)
         {
             var downloadRequest = GetRequestBuilder(settings, "api/downloads");
             var downloads = ProcessRequest<DownloadsResponse>(downloadRequest);

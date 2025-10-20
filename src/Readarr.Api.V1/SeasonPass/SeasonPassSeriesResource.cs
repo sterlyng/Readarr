@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Readarr.Api.V3.Series;
+using Readarr.Api.V1.Series;
 
-namespace Readarr.Api.V3.SeasonPass
+namespace Readarr.Api.V1.SeasonPass
 {
     public class SeasonPassSeriesResource
     {

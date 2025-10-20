@@ -3,10 +3,10 @@ using System.Linq;
 using System.Threading;
 using FluentAssertions;
 using NUnit.Framework;
+using Readarr.Api.V1.Queue;
 using Readarr.Core.Messaging.Commands;
-using Readarr.Integration.Test.Client;
-using Readarr.Api.V3.Queue;
 using Readarr.Http;
+using Readarr.Integration.Test.Client;
 
 namespace Readarr.Integration.Test.ApiTests
 {

@@ -11,6 +11,7 @@ using NUnit.Framework;
 using Readarr.Common.Extensions;
 using Readarr.Core.Configuration;
 using Readarr.Core.Datastore;
+using Readarr.Core.Datastore.Extensions;
 using Readarr.Core.Datastore.Migration.Framework;
 using Readarr.Test.Common.Datastore;
 

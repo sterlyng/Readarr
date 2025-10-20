@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Reflection;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
@@ -7,7 +8,7 @@ using Readarr.Core.Validation.Paths;
 using Readarr.Http;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V5.Settings;
+namespace Readarr.Api.V1.Settings;
 
 [V5ApiController("settings/update")]
 public class UpdateSettingsController : RestController<UpdateSettingsResource>

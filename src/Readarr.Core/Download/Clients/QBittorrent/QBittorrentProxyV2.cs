@@ -5,7 +5,7 @@ using NLog;
 using Readarr.Common.Cache;
 using Readarr.Common.Extensions;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 
 namespace Readarr.Core.Download.Clients.QBittorrent
 {

@@ -6,6 +6,7 @@ using Moq;
 using NUnit.Framework;
 using Readarr.Core.Configuration;
 using Readarr.Core.CustomFormats;
+using Readarr.Core.CustomFormats.Specifications;
 using Readarr.Core.DecisionEngine.Specifications;
 using Readarr.Core.Download.TrackedDownloads;
 using Readarr.Core.Languages;

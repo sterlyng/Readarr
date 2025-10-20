@@ -4,7 +4,7 @@ using System.Web;
 using System.Xml.Linq;
 using Readarr.Core.Download.Extensions;
 
-namespace Readarr.Core.Download.Clients.RTorrent
+namespace Readarr.Core.Download.Clients.rTorrent
 {
     public class RTorrentTorrent
     {

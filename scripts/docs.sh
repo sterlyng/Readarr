@@ -23,7 +23,7 @@ rm -rf $outputFolder
 rm -rf $testPackageFolder
 
 slnFile=src/Readarr.sln
-outputFile=src/Readarr.Api.V5/openapi.json
+outputFile=src/Readarr.Api.V1/openapi.json
 platform=Posix
 
 if [ "$PLATFORM" = "Windows" ]; then
@@ -43,7 +43,7 @@ dotnet tool install --version 8.0.0 Swashbuckle.AspNetCore.Cli
 # Remove the openapi.json file so we can check if it was created
 rm $outputFile
 
-dotnet tool run swagger tofile --output ./src/Readarr.Api.V5/openapi.json "$outputFolder/$FRAMEWORK/$RUNTIME/$application" v5 &
+dotnet tool run swagger tofile --output ./src/Readarr.Api.V1/openapi.json "$outputFolder/$FRAMEWORK/$RUNTIME/$application" v5 &
 
 sleep 45
 

@@ -4,7 +4,7 @@ using Readarr.Core.ThingiProvider;
 using Readarr.Http.ClientSchema;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3
+namespace Readarr.Api.V1
 {
     public class ProviderResource<T> : RestResource
     {

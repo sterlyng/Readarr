@@ -5,7 +5,7 @@ using Readarr.Core.Languages;
 using Readarr.Http;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Profiles.Languages
+namespace Readarr.Api.V1.Profiles.Languages
 {
     [V3ApiController("languageprofile/schema")]
     [Obsolete("Deprecated")]

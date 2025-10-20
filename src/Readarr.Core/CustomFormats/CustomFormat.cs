@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Readarr.Core.CustomFormats.Specifications;
 using Readarr.Core.Datastore;
 
 namespace Readarr.Core.CustomFormats

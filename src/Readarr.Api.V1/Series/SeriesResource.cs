@@ -1,30 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Readarr.Common.Extensions;
 using Readarr.Core.Languages;
 using Readarr.Core.MediaCover;
 using Readarr.Core.Tv;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V5.Series;
+namespace Readarr.Api.V1.Series;
 
 public class SeriesResource : RestResource
 {
-    public string? Title { get; set; }
-    public List<AlternateTitleResource>? AlternateTitles { get; set; }
-    public string? SortTitle { get; set; }
+    public string Title { get; set; }
+    public List<AlternateTitleResource> AlternateTitles { get; set; }
+    public string SortTitle { get; set; }
     public SeriesStatusType Status { get; set; }
     public bool Ended => Status == SeriesStatusType.Ended;
-    public string? ProfileName { get; set; }
-    public string? Overview { get; set; }
+    public string ProfileName { get; set; }
+    public string Overview { get; set; }
     public DateTime? NextAiring { get; set; }
     public DateTime? PreviousAiring { get; set; }
-    public string? Network { get; set; }
-    public string? AirTime { get; set; }
-    public List<MediaCover>? Images { get; set; }
-    public Language? OriginalLanguage { get; set; }
-    public string? RemotePoster { get; set; }
+    public string Network { get; set; }
+    public string AirTime { get; set; }
+    public List<MediaCover> Images { get; set; }
+    public Language OriginalLanguage { get; set; }
+    public string RemotePoster { get; set; }
     public List<SeasonResource> Seasons { get; set; } = new();
     public int Year { get; set; }
-    public string? Path { get; set; }
+    public string Path { get; set; }
     public int QualityProfileId { get; set; }
     public bool SeasonFolder { get; set; }
     public bool Monitored { get; set; }
@@ -35,23 +38,23 @@ public class SeriesResource : RestResource
     public int TvRageId { get; set; }
     public int TvMazeId { get; set; }
     public int TmdbId { get; set; }
-    public HashSet<int>? MalIds { get; set; }
-    public HashSet<int>? AniListIds { get; set; }
+    public HashSet<int> MalIds { get; set; }
+    public HashSet<int> AniListIds { get; set; }
     public DateTime? FirstAired { get; set; }
     public DateTime? LastAired { get; set; }
     public SeriesTypes SeriesType { get; set; }
-    public string? CleanTitle { get; set; }
-    public string? ImdbId { get; set; }
-    public string? TitleSlug { get; set; }
-    public string? RootFolderPath { get; set; }
-    public string? Folder { get; set; }
-    public string? Certification { get; set; }
-    public List<string>? Genres { get; set; }
-    public HashSet<int>? Tags { get; set; }
+    public string CleanTitle { get; set; }
+    public string ImdbId { get; set; }
+    public string TitleSlug { get; set; }
+    public string RootFolderPath { get; set; }
+    public string Folder { get; set; }
+    public string Certification { get; set; }
+    public List<string> Genres { get; set; }
+    public HashSet<int> Tags { get; set; }
     public DateTime Added { get; set; }
-    public AddSeriesOptions? AddOptions { get; set; }
-    public Ratings? Ratings { get; set; }
-    public SeriesStatisticsResource? Statistics { get; set; }
+    public AddSeriesOptions AddOptions { get; set; }
+    public Ratings Ratings { get; set; }
+    public SeriesStatisticsResource Statistics { get; set; }
     public bool? EpisodesChanged { get; set; }
 }
 

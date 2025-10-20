@@ -1,6 +1,6 @@
 using Readarr.Core.Extras.Metadata;
 
-namespace Readarr.Api.V3.Metadata
+namespace Readarr.Api.V1.Metadata
 {
     public class MetadataResource : ProviderResource<MetadataResource>
     {

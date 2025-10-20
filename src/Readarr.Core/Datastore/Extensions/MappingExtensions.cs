@@ -4,7 +4,7 @@ using System.Reflection;
 using Dapper;
 using Readarr.Common.Reflection;
 
-namespace Readarr.Core.Datastore
+namespace Readarr.Core.Datastore.Extensions
 {
     public static class MappingExtensions
     {

@@ -1,17 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.Json.Serialization;
 using Readarr.Core.CustomFormats;
+using Readarr.Core.CustomFormats.Specifications;
 using Readarr.Http.ClientSchema;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V5.CustomFormats
+namespace Readarr.Api.V1.CustomFormats
 {
     public class CustomFormatResource : RestResource
     {
         [JsonIgnore(Condition = JsonIgnoreCondition.Never)]
         public override int Id { get; set; }
-        public required string Name { get; set; }
+
+        public string Name { get; set; } = string.Empty;
         public bool? IncludeCustomFormatWhenRenaming { get; set; }
-        public List<CustomFormatSpecificationSchema>? Specifications { get; set; }
+        public List<CustomFormatSpecificationSchema> Specifications { get; set; }
     }
 
     public static class CustomFormatResourceMapper

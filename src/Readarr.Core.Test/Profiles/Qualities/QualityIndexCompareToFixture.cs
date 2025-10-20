@@ -3,7 +3,7 @@ using NUnit.Framework;
 using Readarr.Core.Profiles.Qualities;
 using Readarr.Core.Test.Framework;
 
-namespace Readarr.Core.Test.Qualities
+namespace Readarr.Core.Test.Profiles.Qualities
 {
     [TestFixture]
     public class QualityIndexCompareToFixture : CoreTest

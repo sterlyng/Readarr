@@ -11,7 +11,7 @@ using Readarr.Core.Parser.Model;
 using Readarr.Core.Tv;
 using Readarr.Core.Validation;
 
-namespace Readarr.Core.ImportLists.Readarr
+namespace Readarr.Core.ImportLists.Sonarr
 {
     public class ReadarrImport : ImportListBase<ReadarrSettings>
     {
@@ -21,7 +21,7 @@ namespace Readarr.Core.ImportLists.Readarr
         public override ImportListType ListType => ImportListType.Program;
         public override TimeSpan MinRefreshInterval => TimeSpan.FromMinutes(5);
 
-        public ReadarrImport(IReadarrV3Proxy ReadarrV3Proxy,
+        public ReadarrImport(IReadarrV3Proxy readarrV3Proxy,
                             IImportListStatusService importListStatusService,
                             IConfigService configService,
                             IParsingService parsingService,
@@ -29,7 +29,7 @@ namespace Readarr.Core.ImportLists.Readarr
                             Logger logger)
             : base(importListStatusService, configService, parsingService, localizationService, logger)
         {
-            _ReadarrV3Proxy = ReadarrV3Proxy;
+            _ReadarrV3Proxy = readarrV3Proxy;
         }
 
         public override ImportListFetchResult Fetch()

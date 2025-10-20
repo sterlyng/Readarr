@@ -3,7 +3,7 @@ using Readarr.Common.Extensions;
 using Readarr.Core.Annotations;
 using Readarr.Core.Validation;
 
-namespace Readarr.Core.Download.Clients.UTorrent
+namespace Readarr.Core.Download.Clients.uTorrent
 {
     public class UTorrentSettingsValidator : AbstractValidator<UTorrentSettings>
     {

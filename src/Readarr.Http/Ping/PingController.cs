@@ -5,9 +5,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Common.Cache;
 using Readarr.Core.Configuration;
-using Readarr.Http.Ping;
 
-namespace Readarr.Http
+namespace Readarr.Http.Ping
 {
     public class PingController : Controller
     {

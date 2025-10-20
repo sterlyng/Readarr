@@ -1,6 +1,4 @@
-using Readarr.Core.Notifications.Trakt.Resource;
-
-namespace Readarr.Core.Notifications.Trakt
+namespace Readarr.Core.Notifications.Trakt.Resource
 {
     public class TraktUserResource
     {

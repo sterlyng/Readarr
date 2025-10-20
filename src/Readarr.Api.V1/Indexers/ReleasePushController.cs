@@ -13,7 +13,7 @@ using Readarr.Core.Parser.Model;
 using Readarr.Core.Profiles.Qualities;
 using Readarr.Http;
 
-namespace Readarr.Api.V3.Indexers
+namespace Readarr.Api.V1.Indexers
 {
     [V3ApiController("release/push")]
     public class ReleasePushController : ReleaseControllerBase

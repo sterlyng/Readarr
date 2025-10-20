@@ -3,7 +3,7 @@ using Readarr.Core.Configuration;
 using Readarr.Http;
 using Readarr.Http.Validation;
 
-namespace Readarr.Api.V3.Config
+namespace Readarr.Api.V1.Config
 {
     [V3ApiController("config/indexer")]
     public class IndexerConfigController : ConfigController<IndexerConfigResource>

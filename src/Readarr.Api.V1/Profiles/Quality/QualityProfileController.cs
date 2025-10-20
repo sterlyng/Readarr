@@ -9,7 +9,7 @@ using Readarr.Http;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
 
-namespace Readarr.Api.V3.Profiles.Quality
+namespace Readarr.Api.V1.Profiles.Quality
 {
     [V3ApiController]
     public class QualityProfileController : RestController<QualityProfileResource>

@@ -1,5 +1,5 @@
 ﻿using NLog;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 
 namespace Readarr.Common.Instrumentation
 {

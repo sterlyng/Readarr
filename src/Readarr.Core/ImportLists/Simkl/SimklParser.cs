@@ -3,7 +3,7 @@ using System.Net;
 using NLog;
 using Readarr.Common.Extensions;
 using Readarr.Common.Instrumentation;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.ImportLists.Exceptions;
 using Readarr.Core.Parser.Model;
 

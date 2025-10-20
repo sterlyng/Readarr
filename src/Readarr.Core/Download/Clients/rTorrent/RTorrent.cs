@@ -10,7 +10,6 @@ using Readarr.Common.Extensions;
 using Readarr.Common.Http;
 using Readarr.Core.Blocklisting;
 using Readarr.Core.Configuration;
-using Readarr.Core.Download.Clients.rTorrent;
 using Readarr.Core.Exceptions;
 using Readarr.Core.Localization;
 using Readarr.Core.MediaFiles.TorrentInfo;
@@ -19,7 +18,7 @@ using Readarr.Core.RemotePathMappings;
 using Readarr.Core.ThingiProvider;
 using Readarr.Core.Validation;
 
-namespace Readarr.Core.Download.Clients.RTorrent
+namespace Readarr.Core.Download.Clients.rTorrent
 {
     public class RTorrent : TorrentClientBase<RTorrentSettings>
     {

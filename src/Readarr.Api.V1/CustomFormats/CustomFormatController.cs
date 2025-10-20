@@ -5,12 +5,13 @@ using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Common.Extensions;
 using Readarr.Core.CustomFormats;
+using Readarr.Core.CustomFormats.Specifications;
 using Readarr.Core.Validation;
 using Readarr.Http;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
 
-namespace Readarr.Api.V3.CustomFormats
+namespace Readarr.Api.V1.CustomFormats
 {
     [V3ApiController]
     public class CustomFormatController : RestController<CustomFormatResource>
@@ -30,12 +31,12 @@ namespace Readarr.Api.V3.CustomFormats
             SharedValidator.RuleFor(c => c.Specifications).NotEmpty();
             SharedValidator.RuleFor(c => c).Custom((customFormat, context) =>
             {
-                if (!customFormat.Specifications.Any())
+                if (customFormat.Specifications != null && !customFormat.Specifications.Any())
                 {
                     context.AddFailure("Must contain at least one Condition");
                 }
 
-                if (customFormat.Specifications.Any(s => s.Name.IsNullOrWhiteSpace()))
+                if (customFormat.Specifications != null && customFormat.Specifications.Any(s => s.Name.IsNullOrWhiteSpace()))
                 {
                     context.AddFailure("Condition name(s) cannot be empty or consist of only spaces");
                 }

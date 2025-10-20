@@ -9,7 +9,7 @@ using Readarr.Common.Http;
 using Readarr.Core.Localization;
 using Readarr.Core.Tv;
 
-namespace Readarr.Core.Notifications.Emby
+namespace Readarr.Core.Notifications.MediaBrowser
 {
     public interface IMediaBrowserService
     {

@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using NUnit.Framework;
-using RestSharp;
 using Readarr.Http.Extensions;
+using RestSharp;
 
 namespace Readarr.Integration.Test
 {

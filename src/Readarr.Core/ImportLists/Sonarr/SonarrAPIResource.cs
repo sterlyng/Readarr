@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Readarr.Core.ImportLists.Readarr
+namespace Readarr.Core.ImportLists.Sonarr
 {
     public class ReadarrSeries
     {

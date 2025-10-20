@@ -5,7 +5,7 @@ using Readarr.Common.EnvironmentInfo;
 using Readarr.Core.Configuration;
 using Readarr.Core.Lifecycle;
 using Readarr.Core.Messaging.Events;
-using Readarr.Core.Update.History.Events;
+using Readarr.Core.Update.Events;
 
 namespace Readarr.Core.Update.History
 {

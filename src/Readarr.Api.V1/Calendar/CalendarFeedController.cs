@@ -11,7 +11,7 @@ using Readarr.Core.Tags;
 using Readarr.Core.Tv;
 using Readarr.Http;
 
-namespace Readarr.Api.V3.Calendar
+namespace Readarr.Api.V1.Calendar
 {
     [V3FeedController("calendar")]
     public class CalendarFeedController : Controller

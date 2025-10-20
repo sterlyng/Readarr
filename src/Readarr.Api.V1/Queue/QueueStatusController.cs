@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Common.TPL;
 using Readarr.Core.Datastore.Events;
@@ -5,11 +7,11 @@ using Readarr.Core.Download.Pending;
 using Readarr.Core.Download.TrackedDownloads;
 using Readarr.Core.Messaging.Events;
 using Readarr.Core.Queue;
-using Readarr.SignalR;
 using Readarr.Http;
 using Readarr.Http.REST;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V5.Queue
+namespace Readarr.Api.V1.Queue
 {
     [V5ApiController("queue/status")]
     public class QueueStatusController : RestControllerWithSignalR<QueueStatusResource, Readarr.Core.Queue.Queue>,

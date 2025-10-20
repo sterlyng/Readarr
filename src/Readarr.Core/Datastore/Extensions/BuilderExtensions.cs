@@ -8,9 +8,9 @@ using Dapper;
 using NLog;
 using Readarr.Common.Extensions;
 using Readarr.Common.Instrumentation;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 
-namespace Readarr.Core.Datastore
+namespace Readarr.Core.Datastore.Extensions
 {
     public static class SqlBuilderExtensions
     {

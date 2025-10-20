@@ -8,7 +8,7 @@ using Readarr.Common.Extensions;
 using Readarr.Core.Configuration;
 using Readarr.Http;
 
-namespace Readarr.Api.V3.Logs
+namespace Readarr.Api.V1.Logs
 {
     [V3ApiController("log/file/update")]
     public class UpdateLogFileController : LogFileControllerBase

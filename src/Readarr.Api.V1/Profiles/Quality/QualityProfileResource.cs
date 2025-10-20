@@ -5,7 +5,7 @@ using Readarr.Core.Profiles;
 using Readarr.Core.Profiles.Qualities;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Profiles.Quality
+namespace Readarr.Api.V1.Profiles.Quality
 {
     public class QualityProfileResource : RestResource
     {

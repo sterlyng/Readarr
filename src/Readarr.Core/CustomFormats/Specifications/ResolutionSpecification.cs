@@ -3,7 +3,7 @@ using Readarr.Core.Annotations;
 using Readarr.Core.Parser;
 using Readarr.Core.Validation;
 
-namespace Readarr.Core.CustomFormats
+namespace Readarr.Core.CustomFormats.Specifications
 {
     public class ResolutionSpecificationValidator : AbstractValidator<ResolutionSpecification>
     {

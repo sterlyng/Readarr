@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace Readarr.Core.Download.Clients.UTorrent
+namespace Readarr.Core.Download.Clients.uTorrent
 {
     public class UTorrentResponse
     {

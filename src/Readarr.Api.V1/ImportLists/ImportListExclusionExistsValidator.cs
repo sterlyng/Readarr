@@ -1,7 +1,7 @@
 using FluentValidation.Validators;
 using Readarr.Core.ImportLists.Exclusions;
 
-namespace Readarr.Api.V3.ImportLists
+namespace Readarr.Api.V1.ImportLists
 {
     public class ImportListExclusionExistsValidator : PropertyValidator
     {

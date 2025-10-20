@@ -4,17 +4,17 @@ using FluentValidation;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Common.Extensions;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Datastore.Events;
 using Readarr.Core.Messaging.Events;
 using Readarr.Core.ThingiProvider;
 using Readarr.Core.ThingiProvider.Events;
 using Readarr.Core.Validation;
-using Readarr.SignalR;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3
+namespace Readarr.Api.V1
 {
     public abstract class ProviderControllerBase<TProviderResource, TBulkProviderResource, TProvider, TProviderDefinition> : RestControllerWithSignalR<TProviderResource, TProviderDefinition>,
         IHandle<ProviderAddedEvent<TProvider>>,

@@ -5,7 +5,7 @@ using FluentAssertions;
 using Moq;
 using NUnit.Framework;
 using Readarr.Core.Download;
-using Readarr.Core.Download.Clients.RTorrent;
+using Readarr.Core.Download.Clients.rTorrent;
 using Readarr.Core.MediaFiles.TorrentInfo;
 
 namespace Readarr.Core.Test.Download.DownloadClientTests.RTorrentTests

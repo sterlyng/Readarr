@@ -3,10 +3,10 @@ using System.Linq;
 using System.Net;
 using FluentAssertions;
 using NLog;
-using Readarr.Common.Serializer;
-using RestSharp;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Http;
 using Readarr.Http.REST;
+using RestSharp;
 
 namespace Readarr.Integration.Test.Client
 {

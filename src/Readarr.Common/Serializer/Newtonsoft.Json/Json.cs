@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 
-namespace Readarr.Common.Serializer
+namespace Readarr.Common.Serializer.Newtonsoft.Json
 {
     public static class Json
     {

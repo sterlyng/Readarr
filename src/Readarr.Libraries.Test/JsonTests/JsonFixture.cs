@@ -1,6 +1,6 @@
 using FluentAssertions;
 using NUnit.Framework;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Test.Common;
 
 namespace Readarr.Libraries.Test.JsonTests

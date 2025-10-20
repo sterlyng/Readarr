@@ -1,7 +1,7 @@
 using Readarr.Core.Download;
 using Readarr.Core.Indexers;
 
-namespace Readarr.Api.V3.DownloadClient
+namespace Readarr.Api.V1.DownloadClient
 {
     public class DownloadClientResource : ProviderResource<DownloadClientResource>
     {

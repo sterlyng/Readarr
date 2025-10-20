@@ -3,7 +3,7 @@ using System.Linq;
 using Readarr.Core.HealthCheck;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Health
+namespace Readarr.Api.V1.Health
 {
     public class HealthResource : RestResource
     {

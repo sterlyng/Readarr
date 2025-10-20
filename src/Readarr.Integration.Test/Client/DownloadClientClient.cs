@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
+using Readarr.Api.V1.DownloadClient;
 using RestSharp;
-using Readarr.Api.V3.DownloadClient;
 
 namespace Readarr.Integration.Test.Client
 {

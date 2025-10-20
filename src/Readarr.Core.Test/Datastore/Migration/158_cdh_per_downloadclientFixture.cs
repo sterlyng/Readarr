@@ -2,9 +2,9 @@ using System.Linq;
 using FluentAssertions;
 using Newtonsoft.Json.Linq;
 using NUnit.Framework;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Datastore.Migration;
-using Readarr.Core.Download.Clients.RTorrent;
+using Readarr.Core.Download.Clients.rTorrent;
 using Readarr.Core.Test.Framework;
 
 namespace Readarr.Core.Test.Datastore.Migration

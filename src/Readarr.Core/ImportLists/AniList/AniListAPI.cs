@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 
 namespace Readarr.Core.ImportLists.AniList
 {

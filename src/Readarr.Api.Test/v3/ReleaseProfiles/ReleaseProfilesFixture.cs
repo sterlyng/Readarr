@@ -1,7 +1,7 @@
 using FluentAssertions;
 using NUnit.Framework;
-using Readarr.Common.Serializer;
-using Readarr.Api.V3.Profiles.Release;
+using Readarr.Api.V1.Profiles.Release;
+using Readarr.Common.Serializer.System.Text.Json;
 using Readarr.Http.REST;
 
 namespace Readarr.Api.Test.v3.ReleaseProfiles

@@ -4,7 +4,7 @@ using FluentValidation;
 using Readarr.Core.Annotations;
 using Readarr.Core.Validation;
 
-namespace Readarr.Core.ImportLists.Readarr
+namespace Readarr.Core.ImportLists.Sonarr
 {
     public class ReadarrSettingsValidator : AbstractValidator<ReadarrSettings>
     {

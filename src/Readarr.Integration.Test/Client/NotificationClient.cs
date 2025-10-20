@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
+using Readarr.Api.V1.Notifications;
 using RestSharp;
-using Readarr.Api.V3.Notifications;
 
 namespace Readarr.Integration.Test.Client
 {

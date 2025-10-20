@@ -11,7 +11,7 @@ using Readarr.Http;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
 
-namespace Readarr.Api.V3.AutoTagging
+namespace Readarr.Api.V1.AutoTagging
 {
     [V3ApiController]
     public class AutoTaggingController : RestController<AutoTaggingResource>

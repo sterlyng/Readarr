@@ -4,7 +4,7 @@ using System.Net;
 using NLog;
 using Readarr.Common.EnvironmentInfo;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Exceptions;
 
 namespace Readarr.Core.Notifications.Plex.PlexTv

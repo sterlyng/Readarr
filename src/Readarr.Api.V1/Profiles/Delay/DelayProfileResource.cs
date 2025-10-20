@@ -4,7 +4,7 @@ using Readarr.Core.Indexers;
 using Readarr.Core.Profiles.Delay;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Profiles.Delay
+namespace Readarr.Api.V1.Profiles.Delay
 {
     public class DelayProfileResource : RestResource
     {

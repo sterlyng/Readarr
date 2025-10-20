@@ -1,12 +1,15 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.Json.Serialization;
+using Readarr.Api.V1.EpisodeFiles;
+using Readarr.Api.V1.Series;
 using Readarr.Core.MediaCover;
 using Readarr.Core.Tv;
-using Readarr.Api.V5.EpisodeFiles;
-using Readarr.Api.V5.Series;
 using Readarr.Http.REST;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Readarr.Api.V5.Episodes
+namespace Readarr.Api.V1.Episodes
 {
     public class EpisodeResource : RestResource
     {
@@ -15,14 +18,14 @@ namespace Readarr.Api.V5.Episodes
         public int EpisodeFileId { get; set; }
         public int SeasonNumber { get; set; }
         public int EpisodeNumber { get; set; }
-        public required string Title { get; set; }
-        public string? AirDate { get; set; }
+        public string Title { get; set; } = string.Empty;
+        public string AirDate { get; set; }
         public DateTime? AirDateUtc { get; set; }
         public DateTime? LastSearchTime { get; set; }
         public int Runtime { get; set; }
-        public string? FinaleType { get; set; }
-        public string? Overview { get; set; }
-        public EpisodeFileResource? EpisodeFile { get; set; }
+        public string FinaleType { get; set; }
+        public string Overview { get; set; }
+        public EpisodeFileResource EpisodeFile { get; set; }
         public bool HasFile { get; set; }
         public bool Monitored { get; set; }
         public int? AbsoluteEpisodeNumber { get; set; }
@@ -32,8 +35,8 @@ namespace Readarr.Api.V5.Episodes
         public bool UnverifiedSceneNumbering { get; set; }
         public DateTime? EndTime { get; set; }
         public DateTime? GrabDate { get; set; }
-        public SeriesResource? Series { get; set; }
-        public List<MediaCover>? Images { get; set; }
+        public SeriesResource Series { get; set; }
+        public List<MediaCover> Images { get; set; }
 
         // Hiding this so people don't think its usable (only used to set the initial state)
         [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingDefault)]

@@ -6,11 +6,11 @@ using NLog;
 using NLog.Config;
 using NLog.Targets;
 using NUnit.Framework;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using Readarr.Automation.Test.PageModel;
 using Readarr.Common.EnvironmentInfo;
 using Readarr.Test.Common;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 
 namespace Readarr.Automation.Test
 {

@@ -1,13 +1,17 @@
+#nullable enable
+using System;
+using System.Collections.Generic;
+using System.IO;
+using Readarr.Api.V1.CustomFormats;
 using Readarr.Core.CustomFormats;
 using Readarr.Core.DecisionEngine.Specifications;
 using Readarr.Core.Languages;
 using Readarr.Core.MediaFiles;
 using Readarr.Core.Parser.Model;
 using Readarr.Core.Qualities;
-using Readarr.Api.V5.CustomFormats;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V5.EpisodeFiles
+namespace Readarr.Api.V1.EpisodeFiles
 {
     public class EpisodeFileResource : RestResource
     {
@@ -19,9 +23,9 @@ namespace Readarr.Api.V5.EpisodeFiles
         public DateTime DateAdded { get; set; }
         public string? SceneName { get; set; }
         public string? ReleaseGroup { get; set; }
-        public required List<Language> Languages { get; set; }
-        public required QualityModel Quality { get; set; }
-        public required List<CustomFormatResource> CustomFormats { get; set; }
+        public List<Language> Languages { get; set; } = new List<Language>();
+        public QualityModel Quality { get; set; } = new QualityModel();
+        public List<CustomFormatResource> CustomFormats { get; set; } = new List<CustomFormatResource>();
         public int CustomFormatScore { get; set; }
         public int? IndexerFlags { get; set; }
         public ReleaseType? ReleaseType { get; set; }

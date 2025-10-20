@@ -4,7 +4,7 @@ using Readarr.Core.ImportLists;
 using Readarr.Core.Validation;
 using Readarr.Http;
 
-namespace Readarr.Api.V3.Config
+namespace Readarr.Api.V1.Config
 {
     [V3ApiController("config/importlist")]
 

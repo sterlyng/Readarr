@@ -3,7 +3,7 @@ using Readarr.Core.Localization;
 using Readarr.Http;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Localization
+namespace Readarr.Api.V1.Localization
 {
     [V3ApiController]
     public class LocalizationController : RestController<LocalizationResource>

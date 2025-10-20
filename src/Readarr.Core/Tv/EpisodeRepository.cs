@@ -4,6 +4,7 @@ using System.Linq;
 using Dapper;
 using NLog;
 using Readarr.Core.Datastore;
+using Readarr.Core.Datastore.Extensions;
 using Readarr.Core.MediaFiles;
 using Readarr.Core.Messaging.Events;
 using Readarr.Core.Qualities;

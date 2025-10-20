@@ -6,7 +6,7 @@ using NLog;
 using Readarr.Common.Extensions;
 using Readarr.Common.Instrumentation;
 
-namespace Readarr.Api.V3.Config
+namespace Readarr.Api.V1.Config
 {
     public static class CertificateValidation
     {

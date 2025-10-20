@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Readarr.Core.Datastore;
+using Readarr.Core.Datastore.Extensions;
 using Readarr.Core.Messaging.Events;
 using Readarr.Core.Tv;
 

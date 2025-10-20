@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Readarr.Core.Download.Clients.UTorrent
+namespace Readarr.Core.Download.Clients.uTorrent
 {
     [Flags]
     public enum UTorrentTorrentStatus

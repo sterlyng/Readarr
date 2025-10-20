@@ -4,6 +4,8 @@ using System.Net;
 using System.Threading.Tasks;
 using FluentValidation.Results;
 using NLog;
+using Polly;
+using Polly.Retry;
 using Readarr.Common.Disk;
 using Readarr.Common.Http;
 using Readarr.Core.Configuration;
@@ -13,8 +15,6 @@ using Readarr.Core.Parser.Model;
 using Readarr.Core.RemotePathMappings;
 using Readarr.Core.ThingiProvider;
 using Readarr.Core.Validation;
-using Polly;
-using Polly.Retry;
 
 namespace Readarr.Core.Download
 {

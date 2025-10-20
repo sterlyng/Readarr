@@ -2,7 +2,7 @@ using FluentValidation;
 using Readarr.Core.Annotations;
 using Readarr.Core.Validation;
 
-namespace Readarr.Core.Download.Clients.RTorrent
+namespace Readarr.Core.Download.Clients.rTorrent
 {
     public class RTorrentSettingsValidator : AbstractValidator<RTorrentSettings>
     {

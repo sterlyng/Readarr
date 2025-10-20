@@ -3,7 +3,7 @@ using System.Linq;
 using Readarr.Core.ImportLists.Exclusions;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.ImportLists
+namespace Readarr.Api.V1.ImportLists
 {
     public class ImportListExclusionResource : RestResource
     {

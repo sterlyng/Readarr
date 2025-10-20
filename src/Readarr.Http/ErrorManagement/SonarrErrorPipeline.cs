@@ -5,7 +5,7 @@ using FluentValidation;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using NLog;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.System.Text.Json;
 using Readarr.Core.Datastore;
 using Readarr.Core.Exceptions;
 using Readarr.Http.Exceptions;

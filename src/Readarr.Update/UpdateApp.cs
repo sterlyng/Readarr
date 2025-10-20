@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using DryIoc;
 using NLog;
-using Readarr.Common.Composition.Extensions;
+using Readarr.Common.Composition;
 using Readarr.Common.EnvironmentInfo;
 using Readarr.Common.Extensions;
 using Readarr.Common.Instrumentation;

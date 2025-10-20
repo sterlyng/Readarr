@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
+using Readarr.Api.V1.Episodes;
 using Readarr.Integration.Test.Client;
-using Readarr.Api.V3.Episodes;
 
 namespace Readarr.Integration.Test.ApiTests
 {

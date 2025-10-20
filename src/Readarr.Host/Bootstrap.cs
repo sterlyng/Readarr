@@ -14,7 +14,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Hosting.WindowsServices;
 using Microsoft.Extensions.Logging;
 using NLog;
-using Readarr.Common.Composition.Extensions;
+using Readarr.Common.Composition;
 using Readarr.Common.EnvironmentInfo;
 using Readarr.Common.Exceptions;
 using Readarr.Common.Extensions;
@@ -38,8 +38,8 @@ namespace Readarr.Host
             "Readarr.Host",
             "Readarr.Core",
             "Readarr.SignalR",
-            "Readarr.Api.V3",
-            "Readarr.Api.V5",
+            "Readarr.Api.V1",
+            "Readarr.Api.V1",
             "Readarr.Http"
         };
 

@@ -3,7 +3,7 @@ using System.Linq;
 using Readarr.Core.Qualities;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Qualities
+namespace Readarr.Api.V1.Qualities
 {
     public class QualityDefinitionResource : RestResource
     {

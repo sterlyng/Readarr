@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
-using Readarr.Api.V3.Series;
+using Readarr.Api.V1.Series;
 
 namespace Readarr.Integration.Test
 {

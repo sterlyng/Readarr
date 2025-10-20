@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Readarr.Core.Notifications.Emby
+namespace Readarr.Core.Notifications.MediaBrowser
 {
     public class MediaBrowserItems
     {

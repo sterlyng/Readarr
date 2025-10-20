@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Readarr.Common.Extensions;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.System.Text.Json;
 using Readarr.Core.Parser.Model;
 
 namespace Readarr.Core.ImportLists.Trakt.User

@@ -2,7 +2,7 @@ using System.Data;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Dapper;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.System.Text.Json;
 
 namespace Readarr.Core.Datastore.Converters
 {

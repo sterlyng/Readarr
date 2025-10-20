@@ -4,7 +4,7 @@ using Readarr.Core.MediaFiles.EpisodeImport;
 using Readarr.Core.Qualities;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Config
+namespace Readarr.Api.V1.Config
 {
     public class MediaManagementConfigResource : RestResource
     {

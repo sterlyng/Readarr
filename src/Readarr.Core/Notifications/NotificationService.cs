@@ -12,7 +12,7 @@ using Readarr.Core.Qualities;
 using Readarr.Core.ThingiProvider;
 using Readarr.Core.Tv;
 using Readarr.Core.Tv.Events;
-using Readarr.Core.Update.History.Events;
+using Readarr.Core.Update.Events;
 
 namespace Readarr.Core.Notifications
 {

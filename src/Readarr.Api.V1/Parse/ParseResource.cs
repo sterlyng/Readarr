@@ -1,12 +1,12 @@
 using System.Collections.Generic;
+using Readarr.Api.V1.CustomFormats;
+using Readarr.Api.V1.Episodes;
+using Readarr.Api.V1.Series;
 using Readarr.Core.Languages;
 using Readarr.Core.Parser.Model;
-using Readarr.Api.V3.CustomFormats;
-using Readarr.Api.V3.Episodes;
-using Readarr.Api.V3.Series;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Parse
+namespace Readarr.Api.V1.Parse
 {
     public class ParseResource : RestResource
     {

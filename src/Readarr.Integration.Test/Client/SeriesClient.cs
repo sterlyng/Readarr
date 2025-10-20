@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Net;
+using Readarr.Api.V1.Series;
 using RestSharp;
-using Readarr.Api.V3.Series;
 
 namespace Readarr.Integration.Test.Client
 {

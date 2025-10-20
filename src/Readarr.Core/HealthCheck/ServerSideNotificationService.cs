@@ -6,7 +6,7 @@ using NLog;
 using Readarr.Common.Cloud;
 using Readarr.Common.EnvironmentInfo;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Configuration;
 using Readarr.Core.Localization;
 

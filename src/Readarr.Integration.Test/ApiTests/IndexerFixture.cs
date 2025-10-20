@@ -2,8 +2,8 @@ using System.Linq;
 using FluentAssertions;
 using Newtonsoft.Json.Linq;
 using NUnit.Framework;
+using Readarr.Api.V1.Indexers;
 using Readarr.Core.ThingiProvider;
-using Readarr.Api.V3.Indexers;
 using Readarr.Http.ClientSchema;
 
 namespace Readarr.Integration.Test.ApiTests

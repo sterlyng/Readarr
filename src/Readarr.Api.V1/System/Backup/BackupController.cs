@@ -11,7 +11,7 @@ using Readarr.Http;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
 
-namespace Readarr.Api.V3.System.Backup
+namespace Readarr.Api.V1.System.Backup
 {
     [V3ApiController("system/backup")]
     public class BackupController : Controller

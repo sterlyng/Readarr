@@ -1,15 +1,15 @@
 using Readarr.Common.Extensions;
 using Readarr.Core.DataAugmentation.Scene;
 
-namespace Readarr.Api.V5.Series;
+namespace Readarr.Api.V1.Series;
 
 public class AlternateTitleResource
 {
-    public string? Title { get; set; }
+    public string Title { get; set; }
     public int? SeasonNumber { get; set; }
     public int? SceneSeasonNumber { get; set; }
-    public string? SceneOrigin { get; set; }
-    public string? Comment { get; set; }
+    public string SceneOrigin { get; set; }
+    public string Comment { get; set; }
 }
 
 public static class AlternateTitleResourceMapper

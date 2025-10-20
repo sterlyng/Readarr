@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Readarr.Core.DiskSpace;
 using Readarr.Http;
 
-namespace Readarr.Api.V3.DiskSpace
+namespace Readarr.Api.V1.DiskSpace
 {
     [V3ApiController("diskspace")]
     public class DiskSpaceController : Controller

@@ -2,7 +2,7 @@
 using System.Linq;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Episodes
+namespace Readarr.Api.V1.Episodes
 {
     public class RenameEpisodeResource : RestResource
     {

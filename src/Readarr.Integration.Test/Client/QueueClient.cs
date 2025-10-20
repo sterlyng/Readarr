@@ -1,5 +1,5 @@
-﻿using RestSharp;
-using Readarr.Api.V3.Queue;
+﻿using Readarr.Api.V1.Queue;
+using RestSharp;
 
 namespace Readarr.Integration.Test.Client
 {

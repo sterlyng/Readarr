@@ -4,7 +4,7 @@ using System.Linq;
 using NLog;
 using Readarr.Common.Extensions;
 using Readarr.Common.Instrumentation.Extensions;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.CustomFormats;
 using Readarr.Core.DataAugmentation.Scene;
 using Readarr.Core.DecisionEngine.Specifications;

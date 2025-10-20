@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Common.EnvironmentInfo;
 using Readarr.Core.Configuration;
@@ -5,7 +7,7 @@ using Readarr.Core.Update;
 using Readarr.Core.Update.History;
 using Readarr.Http;
 
-namespace Readarr.Api.V5.Update
+namespace Readarr.Api.V1.Update
 {
     [V5ApiController]
     public class UpdateController : Controller

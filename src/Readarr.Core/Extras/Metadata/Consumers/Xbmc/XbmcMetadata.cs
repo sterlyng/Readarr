@@ -11,7 +11,7 @@ using NLog;
 using Readarr.Common;
 using Readarr.Common.Disk;
 using Readarr.Common.Extensions;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.System.Text.Json;
 using Readarr.Core.Extras.Metadata.Files;
 using Readarr.Core.MediaCover;
 using Readarr.Core.MediaFiles;
@@ -324,9 +324,9 @@ namespace Readarr.Core.Extras.Metadata.Consumers.Xbmc
                 tvdbId.SetAttributeValue("default", true);
                 details.Add(tvdbId);
 
-                var ReadarrId = new XElement("uniqueid", episode.Id);
-                ReadarrId.SetAttributeValue("type", "Readarr");
-                details.Add(ReadarrId);
+                var readarrId = new XElement("uniqueid", episode.Id);
+                readarrId.SetAttributeValue("type", "Readarr");
+                details.Add(readarrId);
 
                 if (image == null)
                 {

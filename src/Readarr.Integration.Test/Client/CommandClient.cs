@@ -5,8 +5,8 @@ using FluentAssertions;
 using Newtonsoft.Json;
 using NUnit.Framework;
 using Readarr.Core.Messaging.Commands;
-using RestSharp;
 using Readarr.Http.REST;
+using RestSharp;
 
 namespace Readarr.Integration.Test.Client
 {

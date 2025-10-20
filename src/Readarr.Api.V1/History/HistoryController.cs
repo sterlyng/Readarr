@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Readarr.Api.V1.Episodes;
+using Readarr.Api.V1.Series;
 using Readarr.Common.Extensions;
 using Readarr.Core.CustomFormats;
 using Readarr.Core.Datastore;
@@ -9,12 +11,10 @@ using Readarr.Core.DecisionEngine.Specifications;
 using Readarr.Core.Download;
 using Readarr.Core.History;
 using Readarr.Core.Tv;
-using Readarr.Api.V3.Episodes;
-using Readarr.Api.V3.Series;
 using Readarr.Http;
 using Readarr.Http.Extensions;
 
-namespace Readarr.Api.V3.History
+namespace Readarr.Api.V1.History
 {
     [V3ApiController]
     public class HistoryController : Controller
@@ -62,7 +62,15 @@ namespace Readarr.Api.V3.History
 
         [HttpGet]
         [Produces("application/json")]
-        public PagingResource<HistoryResource> GetHistory([FromQuery] PagingRequestResource paging, bool includeSeries, bool includeEpisode, [FromQuery(Name = "eventType")] int[] eventTypes, int? episodeId, string downloadId, [FromQuery] int[] seriesIds = null, [FromQuery] int[] languages = null, [FromQuery] int[] quality = null)
+        public PagingResource<HistoryResource> GetHistory([FromQuery] PagingRequestResource paging,
+            bool includeSeries,
+            bool includeEpisode,
+            [FromQuery(Name = "eventType")] int[] eventTypes,
+            int? episodeId,
+            string downloadId,
+            [FromQuery] int[] seriesIds = null,
+            [FromQuery] int[] languages = null,
+            [FromQuery] int[] quality = null)
         {
             var pagingResource = new PagingResource<HistoryResource>(paging);
             var pagingSpec = pagingResource.MapToPagingSpec<HistoryResource, EpisodeHistory>(

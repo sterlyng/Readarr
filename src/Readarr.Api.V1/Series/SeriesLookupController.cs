@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Core.MediaCover;
 using Readarr.Core.MetadataSource;
@@ -5,7 +7,7 @@ using Readarr.Core.Organizer;
 using Readarr.Core.SeriesStats;
 using Readarr.Http;
 
-namespace Readarr.Api.V5.Series;
+namespace Readarr.Api.V1.Series;
 
 [V5ApiController("series/lookup")]
 public class SeriesLookupController : Controller

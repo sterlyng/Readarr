@@ -2,7 +2,7 @@ using System;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace Readarr.Common.Serializer
+namespace Readarr.Common.Serializer.Newtonsoft.Json
 {
     public class UnderscoreStringEnumConverter : JsonConverter
     {

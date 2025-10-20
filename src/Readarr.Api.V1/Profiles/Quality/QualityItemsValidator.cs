@@ -4,7 +4,7 @@ using FluentValidation;
 using FluentValidation.Validators;
 using Readarr.Common.Extensions;
 
-namespace Readarr.Api.V3.Profiles.Quality
+namespace Readarr.Api.V1.Profiles.Quality
 {
     public static class QualityItemsValidator
     {

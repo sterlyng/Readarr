@@ -1,7 +1,10 @@
-﻿using Readarr.Core.Update;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Readarr.Core.Update;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V5.Update
+namespace Readarr.Api.V1.Update
 {
     public class UpdateResource : RestResource
     {

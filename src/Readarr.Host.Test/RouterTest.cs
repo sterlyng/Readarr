@@ -3,10 +3,9 @@ using NUnit.Framework;
 using Readarr.Common;
 using Readarr.Common.EnvironmentInfo;
 using Readarr.Common.Processes;
-using Readarr.Host;
 using Readarr.Test.Common;
 
-namespace Readarr.App.Test
+namespace Readarr.Host.Test
 {
     [TestFixture]
     public class RouterTest : TestBase<UtilityModeRouter>

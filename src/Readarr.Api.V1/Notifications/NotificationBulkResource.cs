@@ -1,6 +1,6 @@
 using Readarr.Core.Notifications;
 
-namespace Readarr.Api.V3.Notifications
+namespace Readarr.Api.V1.Notifications
 {
     public class NotificationBulkResource : ProviderBulkResource<NotificationBulkResource>
     {

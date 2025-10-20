@@ -8,7 +8,7 @@ using Readarr.Http;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
 
-namespace Readarr.Api.V3.RemotePathMappings
+namespace Readarr.Api.V1.RemotePathMappings
 {
     [V3ApiController]
     public class RemotePathMappingController : RestController<RemotePathMappingResource>

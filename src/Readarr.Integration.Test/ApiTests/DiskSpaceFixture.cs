@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using FluentAssertions;
 using NUnit.Framework;
+using Readarr.Api.V1.DiskSpace;
 using Readarr.Integration.Test.Client;
-using Readarr.Api.V3.DiskSpace;
 
 namespace Readarr.Integration.Test.ApiTests
 {

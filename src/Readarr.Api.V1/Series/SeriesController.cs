@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Common.Extensions;
@@ -16,13 +18,13 @@ using Readarr.Core.Tv.Commands;
 using Readarr.Core.Tv.Events;
 using Readarr.Core.Validation;
 using Readarr.Core.Validation.Paths;
-using Readarr.SignalR;
 using Readarr.Http;
 using Readarr.Http.Extensions;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V5.Series
+namespace Readarr.Api.V1.Series
 {
     [V5ApiController]
     public class SeriesController : RestControllerWithSignalR<SeriesResource, Readarr.Core.Tv.Series>,
@@ -149,7 +151,7 @@ namespace Readarr.Api.V5.Series
             }
         }
 
-        protected override SeriesResource? GetResourceById(int id)
+        protected override SeriesResource GetResourceById(int id)
         {
             var includeSeasonImages = Request?.GetBooleanQueryParameter("includeSeasonImages", false) ?? false;
 
@@ -157,7 +159,7 @@ namespace Readarr.Api.V5.Series
             return GetSeriesResourceById(id, includeSeasonImages);
         }
 
-        private SeriesResource? GetSeriesResourceById(int id, bool includeSeasonImages = false)
+        private SeriesResource GetSeriesResourceById(int id, bool includeSeasonImages = false)
         {
             var series = _seriesService.GetSeries(id);
 
@@ -211,7 +213,7 @@ namespace Readarr.Api.V5.Series
             _seriesService.DeleteSeries(new List<int> { id }, deleteFiles, addImportListExclusion);
         }
 
-        private SeriesResource? GetSeriesResource(Readarr.Core.Tv.Series? series, bool includeSeasonImages)
+        private SeriesResource GetSeriesResource(Readarr.Core.Tv.Series series, bool includeSeasonImages)
         {
             if (series == null)
             {

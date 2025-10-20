@@ -4,7 +4,7 @@ using Readarr.Core.Annotations;
 using Readarr.Core.Parser.Model;
 using Readarr.Core.Validation;
 
-namespace Readarr.Core.CustomFormats
+namespace Readarr.Core.CustomFormats.Specifications
 {
     public class SeasonPackSpecificationValidator : AbstractValidator<ReleaseTypeSpecification>
     {

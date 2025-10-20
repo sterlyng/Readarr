@@ -1,4 +1,4 @@
-namespace Readarr.Core.CustomFormats
+namespace Readarr.Core.CustomFormats.Specifications
 {
     public class ReleaseGroupSpecification : RegexSpecificationBase
     {

@@ -7,7 +7,7 @@ using Moq;
 using NUnit.Framework;
 using Readarr.Common.Http;
 using Readarr.Core.Download;
-using Readarr.Core.Download.Clients.UTorrent;
+using Readarr.Core.Download.Clients.uTorrent;
 using Readarr.Core.MediaFiles.TorrentInfo;
 using Readarr.Test.Common;
 

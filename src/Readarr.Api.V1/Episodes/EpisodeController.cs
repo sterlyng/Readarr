@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 using Readarr.Core.CustomFormats;
 using Readarr.Core.DecisionEngine.Specifications;
 using Readarr.Core.Tv;
-using Readarr.SignalR;
 using Readarr.Http;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3.Episodes
+namespace Readarr.Api.V1.Episodes
 {
     [V3ApiController]
     public class EpisodeController : EpisodeControllerWithSignalR

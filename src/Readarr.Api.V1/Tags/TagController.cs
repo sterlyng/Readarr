@@ -6,12 +6,12 @@ using Readarr.Core.AutoTagging;
 using Readarr.Core.Datastore.Events;
 using Readarr.Core.Messaging.Events;
 using Readarr.Core.Tags;
-using Readarr.SignalR;
 using Readarr.Http;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3.Tags
+namespace Readarr.Api.V1.Tags
 {
     [V3ApiController]
     public class TagController : RestControllerWithSignalR<TagResource, Tag>,

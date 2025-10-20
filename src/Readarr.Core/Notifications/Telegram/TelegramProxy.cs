@@ -7,7 +7,7 @@ using FluentValidation.Results;
 using NLog;
 using Readarr.Common.Extensions;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Configuration;
 using Readarr.Core.Localization;
 

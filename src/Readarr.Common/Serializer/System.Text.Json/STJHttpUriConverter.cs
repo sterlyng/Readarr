@@ -3,7 +3,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using Readarr.Common.Http;
 
-namespace Readarr.Common.Serializer
+namespace Readarr.Common.Serializer.System.Text.Json
 {
     public class STJHttpUriConverter : JsonConverter<HttpUri>
     {

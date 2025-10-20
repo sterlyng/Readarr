@@ -5,11 +5,11 @@ using Readarr.Common.Extensions;
 using Readarr.Core.Datastore.Events;
 using Readarr.Core.Jobs;
 using Readarr.Core.Messaging.Events;
-using Readarr.SignalR;
 using Readarr.Http;
 using Readarr.Http.REST;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3.System.Tasks
+namespace Readarr.Api.V1.System.Tasks
 {
     [V3ApiController("system/task")]
     public class TaskController : RestControllerWithSignalR<TaskResource, ScheduledTask>, IHandle<CommandExecutedEvent>

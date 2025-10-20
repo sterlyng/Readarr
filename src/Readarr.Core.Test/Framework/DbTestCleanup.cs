@@ -3,7 +3,7 @@ using NUnit.Framework;
 using Readarr.Core.Datastore.Migration.Framework;
 using Readarr.Test.Common.Datastore;
 
-namespace Readarr.Core.Test
+namespace Readarr.Core.Test.Framework
 {
     [SetUpFixture]
     public class RemoveCachedDatabase

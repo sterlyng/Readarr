@@ -1,7 +1,7 @@
 using System.Net;
 using System.Net.Http;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 
 namespace Readarr.Core.Notifications.SendGrid
 {

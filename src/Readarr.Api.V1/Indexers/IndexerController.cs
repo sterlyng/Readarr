@@ -1,10 +1,10 @@
 using FluentValidation;
 using Readarr.Core.Indexers;
 using Readarr.Core.Validation;
-using Readarr.SignalR;
 using Readarr.Http;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3.Indexers
+namespace Readarr.Api.V1.Indexers
 {
     [V3ApiController]
     public class IndexerController : ProviderControllerBase<IndexerResource, IndexerBulkResource, IIndexer, IndexerDefinition>

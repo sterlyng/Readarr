@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Readarr.Core.Datastore;
+using Readarr.Core.Datastore.Extensions;
 using Readarr.Core.Messaging.Events;
 using Readarr.Core.Qualities;
 using Readarr.Core.Tv;

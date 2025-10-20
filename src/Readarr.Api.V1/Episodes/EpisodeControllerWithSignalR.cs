@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Readarr.Api.V1.EpisodeFiles;
+using Readarr.Api.V1.Series;
 using Readarr.Core.CustomFormats;
 using Readarr.Core.Datastore.Events;
 using Readarr.Core.DecisionEngine.Specifications;
@@ -7,12 +9,10 @@ using Readarr.Core.Download;
 using Readarr.Core.MediaFiles.Events;
 using Readarr.Core.Messaging.Events;
 using Readarr.Core.Tv;
-using Readarr.SignalR;
-using Readarr.Api.V3.EpisodeFiles;
-using Readarr.Api.V3.Series;
 using Readarr.Http.REST;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3.Episodes
+namespace Readarr.Api.V1.Episodes
 {
     public abstract class EpisodeControllerWithSignalR : RestControllerWithSignalR<EpisodeResource, Episode>,
                                                          IHandle<EpisodeGrabbedEvent>,

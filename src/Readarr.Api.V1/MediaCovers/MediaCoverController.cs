@@ -7,7 +7,7 @@ using Readarr.Common.EnvironmentInfo;
 using Readarr.Common.Extensions;
 using Readarr.Http;
 
-namespace Readarr.Api.V3.MediaCovers
+namespace Readarr.Api.V1.MediaCovers
 {
     [V3ApiController]
     public class MediaCoverController : Controller

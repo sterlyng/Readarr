@@ -1,7 +1,7 @@
 using System.Net.Http;
 using NLog;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Notifications.Slack.Payloads;
 
 namespace Readarr.Core.Notifications.Slack

@@ -4,6 +4,7 @@ using FizzWare.NBuilder;
 using FluentAssertions;
 using NUnit.Framework;
 using Readarr.Core.CustomFormats;
+using Readarr.Core.CustomFormats.Specifications;
 using Readarr.Core.Datastore;
 using Readarr.Core.Housekeeping.Housekeepers;
 using Readarr.Core.Messaging.Events;

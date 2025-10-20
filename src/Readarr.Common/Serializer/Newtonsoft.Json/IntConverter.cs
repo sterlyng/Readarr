@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Readarr.Common.Serializer
+namespace Readarr.Common.Serializer.Newtonsoft.Json
 {
     public class IntConverter : JsonConverter
     {

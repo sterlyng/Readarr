@@ -3,7 +3,7 @@ using Readarr.Common.Extensions;
 using Readarr.Core.Validation;
 using Readarr.Core.Validation.Paths;
 
-namespace Readarr.Api.V3.Series
+namespace Readarr.Api.V1.Series
 {
     public class SeriesEditorValidator : AbstractValidator<Readarr.Core.Tv.Series>
     {

@@ -7,7 +7,7 @@ using Readarr.Core.ImportLists;
 using Readarr.Core.ImportLists.Plex;
 using Readarr.Core.Test.Framework;
 
-namespace Readarr.Core.Test.ImportList.Plex
+namespace Readarr.Core.Test.ImportListTests.Plex
 {
     public class PlexTest : CoreTest<PlexParser>
     {

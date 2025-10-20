@@ -1,8 +1,8 @@
 using System.Reflection;
 using FluentAssertions;
 using NUnit.Framework;
-using Readarr.Automation.Test.PageModel;
 using OpenQA.Selenium;
+using Readarr.Automation.Test.PageModel;
 
 namespace Readarr.Automation.Test
 {

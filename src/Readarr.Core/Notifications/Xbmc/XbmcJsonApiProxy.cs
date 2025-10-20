@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using NLog;
 using Readarr.Common.Extensions;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Notifications.Xbmc.Model;
 
 namespace Readarr.Core.Notifications.Xbmc

@@ -4,8 +4,8 @@ using Moq;
 using NUnit.Framework;
 using Readarr.Core.Annotations;
 using Readarr.Core.Localization;
-using Readarr.Test.Common;
 using Readarr.Http.ClientSchema;
+using Readarr.Test.Common;
 
 namespace Readarr.Api.Test.ClientSchemaTests
 {

@@ -2,16 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Readarr.Api.V1.Episodes;
 using Readarr.Common.Extensions;
 using Readarr.Core.CustomFormats;
 using Readarr.Core.DecisionEngine.Specifications;
 using Readarr.Core.Tags;
 using Readarr.Core.Tv;
-using Readarr.SignalR;
-using Readarr.Api.V3.Episodes;
 using Readarr.Http;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3.Calendar
+namespace Readarr.Api.V1.Calendar
 {
     [V3ApiController]
     public class CalendarController : EpisodeControllerWithSignalR

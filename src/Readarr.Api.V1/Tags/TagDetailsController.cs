@@ -4,7 +4,7 @@ using Readarr.Core.Tags;
 using Readarr.Http;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Tags
+namespace Readarr.Api.V1.Tags
 {
     [V3ApiController("tag/detail")]
     public class TagDetailsController : RestController<TagDetailsResource>

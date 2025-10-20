@@ -4,7 +4,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace Readarr.Common.Serializer
+namespace Readarr.Common.Serializer.System.Text.Json
 {
     public static class STJson
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using NLog;
 using Readarr.Common.Cache;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Indexers.Exceptions;
 
 namespace Readarr.Core.Indexers.TorrentRss

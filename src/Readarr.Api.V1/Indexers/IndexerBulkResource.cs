@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Readarr.Core.Indexers;
 
-namespace Readarr.Api.V3.Indexers
+namespace Readarr.Api.V1.Indexers
 {
     public class IndexerBulkResource : ProviderBulkResource<IndexerBulkResource>
     {

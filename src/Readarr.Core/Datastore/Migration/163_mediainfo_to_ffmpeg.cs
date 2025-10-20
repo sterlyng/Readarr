@@ -10,7 +10,7 @@ using Dapper;
 using FluentMigrator;
 using Readarr.Common.EnvironmentInfo;
 using Readarr.Common.Extensions;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.System.Text.Json;
 using Readarr.Core.Datastore.Migration.Framework;
 using Readarr.Core.MediaFiles;
 using Readarr.Core.MediaFiles.MediaInfo;

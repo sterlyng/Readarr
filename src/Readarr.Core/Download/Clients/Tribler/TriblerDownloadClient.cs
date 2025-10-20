@@ -9,7 +9,7 @@ using Readarr.Common.Http;
 
 using Readarr.Core.Blocklisting;
 using Readarr.Core.Configuration;
-using Readarr.Core.Indexers.Tribler;
+using Readarr.Core.Download.Clients.Tribler.Models;
 using Readarr.Core.Localization;
 using Readarr.Core.MediaFiles.TorrentInfo;
 using Readarr.Core.Parser.Model;
@@ -177,7 +177,7 @@ namespace Readarr.Core.Download.Clients.Tribler
             };
         }
 
-        protected static bool HasReachedSeedLimit(Download torrent, TriblerSettingsResponse config)
+        protected static bool HasReachedSeedLimit(Models.Download torrent, TriblerSettingsResponse config)
         {
             if (config == null)
             {

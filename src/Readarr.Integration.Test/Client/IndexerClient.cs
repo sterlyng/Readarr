@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
+using Readarr.Api.V1.Indexers;
 using RestSharp;
-using Readarr.Api.V3.Indexers;
 
 namespace Readarr.Integration.Test.Client
 {

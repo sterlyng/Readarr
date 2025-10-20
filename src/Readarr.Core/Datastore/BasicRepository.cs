@@ -8,11 +8,12 @@ using System.Reflection;
 using System.Text;
 using Dapper;
 using NLog;
-using Readarr.Common.Instrumentation;
-using Readarr.Core.Datastore.Events;
-using Readarr.Core.Messaging.Events;
 using Polly;
 using Polly.Retry;
+using Readarr.Common.Instrumentation;
+using Readarr.Core.Datastore.Events;
+using Readarr.Core.Datastore.Extensions;
+using Readarr.Core.Messaging.Events;
 
 namespace Readarr.Core.Datastore
 {

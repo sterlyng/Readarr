@@ -1,7 +1,7 @@
 using Readarr.Core.Configuration;
 using Readarr.Http;
 
-namespace Readarr.Api.V3.Config
+namespace Readarr.Api.V1.Config
 {
     [V3ApiController("config/downloadclient")]
     public class DownloadClientConfigController : ConfigController<DownloadClientConfigResource>

@@ -5,12 +5,12 @@ using Readarr.Core.Datastore.Events;
 using Readarr.Core.Messaging.Events;
 using Readarr.Core.Profiles.Qualities;
 using Readarr.Core.Qualities;
-using Readarr.SignalR;
 using Readarr.Http;
 using Readarr.Http.REST;
 using Readarr.Http.REST.Attributes;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3.Qualities
+namespace Readarr.Api.V1.Qualities
 {
     [V3ApiController]
     public class QualityDefinitionController :

@@ -3,7 +3,7 @@ using System.Linq;
 using Readarr.Core.Tags;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Tags
+namespace Readarr.Api.V1.Tags
 {
     public class TagDetailsResource : RestResource
     {

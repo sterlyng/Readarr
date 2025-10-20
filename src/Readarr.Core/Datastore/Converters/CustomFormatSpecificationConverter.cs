@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using Readarr.Core.CustomFormats;
+using Readarr.Core.CustomFormats.Specifications;
 
 namespace Readarr.Core.Datastore.Converters
 {

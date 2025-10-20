@@ -2,7 +2,7 @@ using System;
 using NLog;
 using Readarr.Common.Cloud;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Localization;
 
 namespace Readarr.Core.HealthCheck.Checks

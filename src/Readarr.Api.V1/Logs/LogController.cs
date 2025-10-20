@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Readarr.Common.Extensions;
 using Readarr.Core.Configuration;
@@ -5,7 +7,7 @@ using Readarr.Core.Instrumentation;
 using Readarr.Http;
 using Readarr.Http.Extensions;
 
-namespace Readarr.Api.V5.Logs
+namespace Readarr.Api.V1.Logs
 {
     [V5ApiController]
     public class LogController : Controller
@@ -21,7 +23,7 @@ namespace Readarr.Api.V5.Logs
 
         [HttpGet]
         [Produces("application/json")]
-        public PagingResource<LogResource> GetLogs([FromQuery] PagingRequestResource paging, string? level)
+        public PagingResource<LogResource> GetLogs([FromQuery] PagingRequestResource paging, string level)
         {
             if (!_configFileProvider.LogDbEnabled)
             {

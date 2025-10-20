@@ -2,6 +2,7 @@
 using System.Text.Json.Serialization;
 using NLog;
 using Readarr.Common.Instrumentation;
+using Readarr.Core.Datastore.Extensions;
 
 namespace Readarr.Core.Datastore
 {

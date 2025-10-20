@@ -1,7 +1,7 @@
 ﻿using FluentValidation.TestHelper;
 using NUnit.Framework;
+using Readarr.Api.V1.Qualities;
 using Readarr.Core.Qualities;
-using Readarr.Api.V3.Qualities;
 
 namespace Readarr.Api.Test.v3.Qualities;
 

@@ -1,11 +1,11 @@
 ﻿using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.DiskSpace
+namespace Readarr.Api.V1.DiskSpace
 {
     public class DiskSpaceResource : RestResource
     {
-        public string Path { get; set; }
-        public string Label { get; set; }
+        public string Path { get; set; } = string.Empty;
+        public string Label { get; set; } = string.Empty;
         public long FreeSpace { get; set; }
         public long TotalSpace { get; set; }
     }
@@ -16,7 +16,7 @@ namespace Readarr.Api.V3.DiskSpace
         {
             if (model == null)
             {
-                return null;
+                return null!;
             }
 
             return new DiskSpaceResource

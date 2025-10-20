@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 using NLog;
 using Readarr.Common.Extensions;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Download.Clients.Sabnzbd.Responses;
 
 namespace Readarr.Core.Download.Clients.Sabnzbd

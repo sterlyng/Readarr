@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using NLog;
 using Readarr.Common.Http;
-using Readarr.Common.Serializer;
+using Readarr.Common.Serializer.Newtonsoft.Json;
 using Readarr.Core.Tv;
 
-namespace Readarr.Core.Notifications.Emby
+namespace Readarr.Core.Notifications.MediaBrowser
 {
     public class MediaBrowserProxy
     {

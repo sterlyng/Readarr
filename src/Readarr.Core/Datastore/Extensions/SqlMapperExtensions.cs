@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using Dapper;
 
-namespace Readarr.Core.Datastore
+namespace Readarr.Core.Datastore.Extensions
 {
     public static class SqlMapperExtensions
     {

@@ -3,7 +3,7 @@ using System.Linq;
 using DryIoc;
 using Readarr.Common.EnvironmentInfo;
 
-namespace Readarr.Common.Composition.Extensions
+namespace Readarr.Common.Composition
 {
     public static class ServiceCollectionExtensions
     {

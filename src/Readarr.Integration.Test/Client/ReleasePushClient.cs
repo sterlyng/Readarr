@@ -1,5 +1,5 @@
-﻿using RestSharp;
-using Readarr.Api.V3.Indexers;
+﻿using Readarr.Api.V1.Indexers;
+using RestSharp;
 
 namespace Readarr.Integration.Test.Client
 {

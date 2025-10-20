@@ -1,6 +1,8 @@
+using System;
+using System.Collections.Generic;
 using Readarr.Core.SeriesStats;
 
-namespace Readarr.Api.V5.Series;
+namespace Readarr.Api.V1.Series;
 
 public class SeasonStatisticsResource
 {
@@ -10,7 +12,7 @@ public class SeasonStatisticsResource
     public int EpisodeCount { get; set; }
     public int TotalEpisodeCount { get; set; }
     public long SizeOnDisk { get; set; }
-    public List<string>? ReleaseGroups { get; set; }
+    public List<string> ReleaseGroups { get; set; }
 
     public decimal PercentOfEpisodes
     {

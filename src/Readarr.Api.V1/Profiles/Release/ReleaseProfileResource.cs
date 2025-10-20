@@ -5,7 +5,7 @@ using System.Text.Json;
 using Readarr.Core.Profiles.Releases;
 using Readarr.Http.REST;
 
-namespace Readarr.Api.V3.Profiles.Release
+namespace Readarr.Api.V1.Profiles.Release
 {
     public class ReleaseProfileResource : RestResource
     {

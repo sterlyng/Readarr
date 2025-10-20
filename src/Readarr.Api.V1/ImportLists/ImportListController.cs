@@ -2,10 +2,10 @@ using FluentValidation;
 using Readarr.Core.ImportLists;
 using Readarr.Core.Validation;
 using Readarr.Core.Validation.Paths;
-using Readarr.SignalR;
 using Readarr.Http;
+using Readarr.SignalR;
 
-namespace Readarr.Api.V3.ImportLists
+namespace Readarr.Api.V1.ImportLists
 {
     [V3ApiController]
     public class ImportListController : ProviderControllerBase<ImportListResource, ImportListBulkResource, IImportList, ImportListDefinition>

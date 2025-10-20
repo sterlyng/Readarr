@@ -11,7 +11,7 @@ using Readarr.Core.Lifecycle;
 using Readarr.Http;
 using Readarr.Http.Validation;
 
-namespace Readarr.Api.V3.System
+namespace Readarr.Api.V1.System
 {
     [V3ApiController]
     public class SystemController : Controller
